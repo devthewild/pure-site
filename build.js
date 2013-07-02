@@ -82,7 +82,7 @@ for( var name in pages ) {
     request(host + pages[name], function(err, res, body) {
       for( var n in pages )
         body = body.replace(regexp[n], '"' + file[n] + '"');
-      body.replace( /"\//g, '"/' + prefix);
+      body = body.replace( /"\//g, '"/' + prefix);
 
       var splitted = pages[name].split('/');
       if( splitted.length > 3 ) {
