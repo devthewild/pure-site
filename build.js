@@ -5,6 +5,17 @@ var app = require('./app');
 var dst = process.argv[2] || '../pure-site-html';
 var request = require('request');
 var pages = app.locals.pages;
+var prefix = process.argv.length > 3 ? process.argv[3] : 'pure-site';
+
+if( prefix && prefix.indexOf('/') !== prefix.length-1 ) 
+  prefix = prefix + '/';
+
+/**
+ * create server to get rendered page.
+ */
+var http = require('http');
+var server = http.createServer(app).listen(app.locals.settings.port, function () {
+});
 
 /**
  * from node-mkdirp
@@ -65,11 +76,13 @@ for( var name in pages ) {
 }
 
 var host = 'http://localhost:' + app.locals.settings.port;
+var timeout = null;
 for( var name in pages ) {
-  (function(name) { 
+  (function(name) {
     request(host + pages[name], function(err, res, body) {
       for( var n in pages )
         body = body.replace(regexp[n], '"' + file[n] + '"');
+      body.replace( /"\//g, '"/' + prefix);
 
       var splitted = pages[name].split('/');
       if( splitted.length > 3 ) {
@@ -78,6 +91,11 @@ for( var name in pages ) {
       }
       fs.writeFileSync(dst + file[name], body);
       console.log( 'Completed to write ' + (dst + file[name]) + ' ' + (body.length/8) + 'bytes');
+			if(timeout) {
+				clearTimeout(timeout);
+				timeout = null;
+			}
+			timeout = setTimeout( function(){ server.close(); }, 1000 );
     });
   })(name);
 }
@@ -88,14 +106,14 @@ var src = './public';
   for( var i=0 ; i<files.length ; i++ ) {
     var file = files[i];
     if( !file.indexOf('.') ) continue;
-    if( fs.statSync(src+dir+'/'+file).isDirectory() ) {
-      if( !fs.existsSync(dst+'/'+dir+'/'+file) )
-        fs.mkdirSync(dst+'/'+dir+'/'+file, '0755');
+    if( fs.statSync(src+dir+file).isDirectory() ) {
+      if( !fs.existsSync(dst+'/'+dir+file) )
+        fs.mkdirSync(dst+'/'+dir+file, '0755');
       cp(dir+file+'/');
     } else {
-      var buff = fs.readFileSync(src+dir+'/'+file);
-      fs.writeFileSync(dst+'/'+dir+'/'+file, buff);
-      console.log('Completed to copy ' + src+dir+'/'+file);
+      var buff = fs.readFileSync(src+dir+file);
+      fs.writeFileSync(dst+'/'+dir+file, buff);
+      console.log('Completed to copy ' + src+dir+file);
     }
   }
 })('/');
