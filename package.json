@@ -24,7 +24,8 @@
         "express": "3.x",
         "express3-handlebars": "0.4.x",
         "express-state": "0.0.2",
-        "handlebars": "1.x"
+        "handlebars": "1.x",
+        "request": "*"
     },
     "yahoo": {
         "bugzilla": {
