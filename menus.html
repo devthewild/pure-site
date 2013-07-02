@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menus &amp;ndash; Pure</title>
+
+
+    
+    
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/menus.css">
+
+<link rel="stylesheet" href="/css/rainbow/baby-blue.css">
+
+
+
+
+
+    
+<script src="http://use.typekit.net/ajf8ggy.js"></script>
+<script>
+    try { Typekit.load(); } catch (e) {}
+</script>
+
+
+    
+
+</head>
+<body>
+
+    <div class="pure-g-r " id="layout">
+        <a href="#menu" id="menuLink" class="pure-menu-link">
+    <img src="/img/navicon-png2x.png" width="20"
+         alt="Menu toggle">
+</a>
+
+<div class="pure-u" id="menu">
+    <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading" href="/index.html">Pure</a>
+
+        <ul>
+          
+            <li class=" ">
+                <a href="/base.html">Base</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/grids.html">Grids</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/forms.html">Forms</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/buttons.html">Buttons</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/tables.html">Tables</a>
+            </li>
+          
+            <li class="pure-menu-selected ">
+                <a href="/menus.html">Menus</a>
+            </li>
+          
+            <li class=" menu-item-divided">
+                <a href="/customize.html">Customize</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/extend.html">Extend</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/layouts.html">Layouts</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/updates.html">Updates</a>
+            </li>
+          
+
+            <li class="menu-item-divided">
+                <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a>
+            </li>
+
+            <li>
+                <a href="http://yuilibrary.com/">YUI Library</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="pure-u" id="main">
+
+            
+
+
+
+
+
+<div class="header pure-u-1">
+    <h1 class="pure-u-1">Menus</h1>
+
+  
+    <h2 class="pure-u">Simple CSS for Menus</h2>
+  
+</div>
+
+
+<!-- adding to the top so that the dropdown example code can run -->
+<script>
+    
+(function (g) {
+// -- Namespaces --
+
+
+// -- Exposed --
+g.YUI_config = {"gallery":"gallery-2013.03.27-22-06","combine":false,"filter":"raw"};
+}(this));
+
+</script>
+
+<script src="http://yui.yahooapis.com/3.10.1/build/yui/yui.js"></script>
+<script>
+YUI().use('node-base', 'node-event-delegate', function (Y) {
+    // This just makes sure that the href="#" attached to the <a> elements
+    // don't scroll you back up the page.
+    Y.one('.content').delegate('click', function (e) {
+        e.preventDefault();
+    }, 'a[href="#"]');
+});
+</script>
+
+
+<div class="content">
+
+    <h2 class="content-subhead">Horizontal Menu</h2>
+    <p>
+        To create a horizontal menu, add the &lt;code&gt;pure-menu-horizontal&lt;/code&gt; class name. You can mark the active list element by adding the &lt;code&gt;pure-menu-selected&lt;/code&gt; class to the list element.
+    </p>
+
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="pure-menu-selected"><a href="#">Flickr</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Finance</a></li>
+    </ul>
+</div>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;div class=&quot;pure-menu pure-menu-open pure-menu-horizontal&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;pure-menu-selected&quot;&gt;&lt;a href=&quot;#&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Messenger&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Menu with Headings</h2>
+    <p>
+        To add headings to your menu, place some content outside the &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; element and wrap it in an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; element with the &lt;code&gt;pure-menu-heading&lt;/code&gt; class name.
+    </p>
+
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading">Site Title</a>
+
+    <ul>
+        <li class="pure-menu-selected"><a href="#">Home</a></li>
+        <li><a href="#">Flickr</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Finance</a></li>
+    </ul>
+</div>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;div class=&quot;pure-menu pure-menu-open pure-menu-horizontal&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;pure-menu-heading&quot;&gt;Site Title&lt;/a&gt;
+
+    &lt;ul&gt;
+        &lt;li class=&quot;pure-menu-selected&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Messenger&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Vertical Menu</h2>
+    <p>
+        Menus are vertical by default. You need only add the &lt;code&gt;pure-menu&lt;/code&gt; class to style the menu, and the &lt;code&gt;pure-menu-open&lt;/code&gt; class to ensure that it is visible.
+    </p>
+
+    <div class="pure-menu pure-menu-open">
+    <a class="pure-menu-heading">Yahoo! Sites</a>
+
+    <ul>
+        <li><a href="#">Flickr</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Finance</a></li>
+        <li class="pure-menu-heading">More Sites!</li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">OMG!</a></li>
+    </ul>
+</div>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;div class=&quot;pure-menu pure-menu-open&quot;&gt;
+    &lt;a class=&quot;pure-menu-heading&quot;&gt;Yahoo! Sites&lt;/a&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Messenger&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;pure-menu-heading&quot;&gt;More Sites!&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Games&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;OMG!&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Add Dropdowns to Menus</h2>
+    <p>
+        Adding dropdowns to menus requires the use of JavaScript. For example, YUI's &lt;code&gt;Y.Menu&lt;/code&gt; module adds dropdown functionality and the ability to create JavaScript menus.
+    </p>
+
+    <div id="horizontal-menu">
+    <ul id="std-menu-items">
+        <li class="pure-menu-selected"><a href="#">Flickr</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Finance</a></li>
+        <li>
+            <a href="#">Other</a>
+            <ul>
+                <li class="pure-menu-heading">More from Yahoo!</li>
+                <li class="pure-menu-separator"></li>
+                <li><a href="#">Autos</a></li>
+                <li><a href="#">Flickr</a></li>
+                <li><a href="#">Answers</a></li>
+                <li>
+                    <a href="#">Even More</a>
+                    <ul>
+                        <li><a href="#">Horoscopes</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">OMG</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+YUI({
+    classNamePrefix: 'pure'
+}).use('gallery-sm-menu', function (Y) {
+
+    var horizontalMenu = new Y.Menu({
+        container         : '#horizontal-menu',
+        sourceNode        : '#std-menu-items',
+        orientation       : 'horizontal',
+        hideOnOutsideClick: false,
+        hideOnClick       : false
+    });
+
+    horizontalMenu.render();
+    horizontalMenu.show();
+
+});
+</script>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;div id=&quot;horizontal-menu&quot;&gt;
+    &lt;ul id=&quot;std-menu-items&quot;&gt;
+        &lt;li class=&quot;pure-menu-selected&quot;&gt;&lt;a href=&quot;#&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Messenger&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot;&gt;Other&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li class=&quot;pure-menu-heading&quot;&gt;More from Yahoo!&lt;/li&gt;
+                &lt;li class=&quot;pure-menu-separator&quot;&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Autos&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Answers&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;Even More&lt;/a&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Horoscopes&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Games&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Jobs&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;OMG&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+YUI({
+    classNamePrefix: &#x27;pure&#x27;
+}).use(&#x27;gallery-sm-menu&#x27;, function (Y) {
+
+    var horizontalMenu = new Y.Menu({
+        container         : &#x27;#horizontal-menu&#x27;,
+        sourceNode        : &#x27;#std-menu-items&#x27;,
+        orientation       : &#x27;horizontal&#x27;,
+        hideOnOutsideClick: false,
+        hideOnClick       : false
+    });
+
+    horizontalMenu.render();
+    horizontalMenu.show();
+
+});
+&lt;/script&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Menus with Disabled Items</h2>
+    <p>
+        To mark a link as disabled, add an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; element with the &lt;code&gt;pure-menu-disabled&lt;/code&gt; class name. Disabled items appear faded and do not inherit hover styles.
+    </p>
+
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading">Site Title</a>
+
+    <ul>
+        <li class="pure-menu-selected"><a href="#">Home</a></li>
+        <li><a href="#">Flickr</a></li>
+        <li class="pure-menu-disabled"><a href="#">Disabled Item</a></li>
+    </ul>
+</div>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;div class=&quot;pure-menu pure-menu-open pure-menu-horizontal&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;pure-menu-heading&quot;&gt;Site Title&lt;/a&gt;
+
+    &lt;ul&gt;
+        &lt;li class=&quot;pure-menu-selected&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;pure-menu-disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;Disabled Item&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Paginators</h2>
+    <p>
+        To create a paginator control, add the &lt;code&gt;pure-paginator&lt;/code&gt; classname to a &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; element. For paginator controls that look like buttons, add the &lt;code&gt;pure-button&lt;/code&gt; class name. For a plainer paginator, you can omit this class.
+    </p>
+
+    <ul class="pure-paginator">
+    <li><a class="pure-button prev" href="#">&#171;</a></li>
+    <li><a class="pure-button" href="#">1</a></li>
+    <li><a class="pure-button pure-button-active" href="#">2</a></li>
+    <li><a class="pure-button" href="#">3</a></li>
+    <li><a class="pure-button" href="#">4</a></li>
+    <li><a class="pure-button" href="#">5</a></li>
+    <li><a class="pure-button next" href="#">&#187;</a></li>
+</ul>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;ul class=&quot;pure-paginator&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;pure-button prev&quot; href=&quot;#&quot;&gt;&amp;#171;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pure-button&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pure-button pure-button-active&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pure-button&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pure-button&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pure-button&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;pure-button next&quot; href=&quot;#&quot;&gt;&amp;#187;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+</div>
+
+
+            <div class="legal pure-g-r">
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <p class="legal-license">
+                This site is built with &lt;3 using Pure v0.2.0
+            </p>
+            <p class="legal-license">
+                All code on this site is licensed under the <a href="http://yuilibrary.com/license/">BSD License</a> unless stated otherwise.
+            </p>
+        </div>
+    </div>
+
+    <div class="pure-u-1-5">
+        <div class="l-box legal-logo">
+            <a href="http://yuilibrary.com/">
+                <img src="/img/logo-footer.png" height="30" width="65"
+                     alt="YUI logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <ul class="legal-links pure-g">
+                <li class='pure-u-1-2'>
+                    <a href="https://github.com/yui/pure/">GitHub Project</a>
+                </li>
+                <li class='pure-u-1-2'>
+                    <a href="http://yuilibrary.com/security/">Security Contact Info</a>
+                </li>
+            </ul>
+
+            <p class="legal-copyright">
+                &copy; 2013 Yahoo! Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    
+    
+
+  
+    <script src="/js/ui.js"></script>
+  
+    <script src="/vendor/rainbow/rainbow-min.js"></script>
+  
+
+</body>
+</html>

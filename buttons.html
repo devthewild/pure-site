@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buttons &amp;ndash; Pure</title>
+
+
+    
+    
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/rainbow/baby-blue.css">
+
+
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome-ie7.css">
+
+
+
+    
+<script src="http://use.typekit.net/ajf8ggy.js"></script>
+<script>
+    try { Typekit.load(); } catch (e) {}
+</script>
+
+
+    
+
+</head>
+<body>
+
+    <div class="pure-g-r " id="layout">
+        <a href="#menu" id="menuLink" class="pure-menu-link">
+    <img src="/img/navicon-png2x.png" width="20"
+         alt="Menu toggle">
+</a>
+
+<div class="pure-u" id="menu">
+    <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading" href="/index.html">Pure</a>
+
+        <ul>
+          
+            <li class=" ">
+                <a href="/base.html">Base</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/grids.html">Grids</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/forms.html">Forms</a>
+            </li>
+          
+            <li class="pure-menu-selected ">
+                <a href="/buttons.html">Buttons</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/tables.html">Tables</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/menus.html">Menus</a>
+            </li>
+          
+            <li class=" menu-item-divided">
+                <a href="/customize.html">Customize</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/extend.html">Extend</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/layouts.html">Layouts</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/updates.html">Updates</a>
+            </li>
+          
+
+            <li class="menu-item-divided">
+                <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a>
+            </li>
+
+            <li>
+                <a href="http://yuilibrary.com/">YUI Library</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="pure-u" id="main">
+
+            
+
+
+
+
+
+
+<div class="header pure-u-1">
+    <h1 class="pure-u-1">Buttons</h1>
+
+  
+    <h2 class="pure-u">Simple CSS for Buttons</h2>
+  
+</div>
+
+
+<div class="content">
+
+    <h2 class="content-subhead">Default Buttons</h2>
+    <p>
+        To create a Pure Button, add the &lt;code&gt;pure-button&lt;/code&gt; classname to any &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt; element.
+    </p>
+
+  
+    <a class="pure-button" href="#">A Pure Button</a>
+<button class="pure-button">A Pure Button</button>
+
+  
+
+
+  <pre class="snippet" data-language="html"><code>&lt;a class=&quot;pure-button&quot; href=&quot;#&quot;&gt;A Pure Button&lt;/a&gt;
+&lt;button class=&quot;pure-button&quot;&gt;A Pure Button&lt;/button&gt;</code></pre>
+
+    <h2 class="content-subhead">Disabled Buttons</h2>
+    <p>
+        To mark a button as disabled, add the &lt;code&gt;pure-button-disabled&lt;/code&gt; classname alongside &lt;code&gt;pure-button&lt;/code&gt;.
+    </p>
+
+  
+    <a class="pure-button pure-button-disabled" href="#">A Disabled Button</a>
+<button class="pure-button pure-button-disabled">A Disabled Button</button>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;a class=&quot;pure-button pure-button-disabled&quot; href=&quot;#&quot;&gt;A Disabled Button&lt;/a&gt;
+&lt;button class=&quot;pure-button pure-button-disabled&quot;&gt;A Disabled Button&lt;/button&gt;</code></pre>
+
+    <h2 class="content-subhead">Active Buttons</h2>
+    <p>
+        To style a button so that it appears "pressed", add the &lt;code&gt;pure-button-active&lt;/code&gt; classname alongside &lt;code&gt;pure-button&lt;/code&gt;.
+    </p>
+
+  
+    <a class="pure-button pure-button-active" href="#">An Active Button</a>
+<button class="pure-button pure-button-active">An Active Button</button>
+
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;a class=&quot;pure-button pure-button-active&quot; href=&quot;#&quot;&gt;An Active Button&lt;/a&gt;
+&lt;button class=&quot;pure-button pure-button-active&quot;&gt;An Active Button&lt;/button&gt;</code></pre>
+
+    <h2 class="content-subhead">Primary Buttons</h2>
+    <p>
+        To indicate that a button represents a primary action, add the &lt;code&gt;pure-button-primary&lt;/code&gt; classname alongside &lt;code&gt;pure-button&lt;/code&gt;.
+    </p>
+
+  
+    <a class="pure-button pure-button-primary" href="#">A Primary Button</a>
+<button class="pure-button pure-button-primary">A Primary Button</button>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;a class=&quot;pure-button pure-button-primary&quot; href=&quot;#&quot;&gt;A Primary Button&lt;/a&gt;
+&lt;button class=&quot;pure-button pure-button-primary&quot;&gt;A Primary Button&lt;/button&gt;</code></pre>
+
+
+
+    <h2 class="content-subhead">Customizing Buttons</h2>
+    <p>
+        Thanks to Pure's minimal styling, it is easy to build off of the generic Pure button and create customized buttons for your own application.
+    </p>
+
+    <p>
+        To customize button styles, you should group your custom CSS into a class such as &lt;code&gt;pure-button-foo&lt;/code&gt;, which you can then append to an element that already has the &lt;code&gt;pure-button&lt;/code&gt; classname. Here are some examples.
+    </p>
+
+    <h3 class="content-subhead">Colored buttons with rounded corners</h3>
+
+  
+    <div>
+    <style scoped>
+
+        .pure-button-success,
+        .pure-button-error,
+        .pure-button-warning,
+        .pure-button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .pure-button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .pure-button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .pure-button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .pure-button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+    </style>
+
+    <button class="pure-button pure-button-success">Success Button</button>
+    <button class="pure-button pure-button-error">Error Button</button>
+    <button class="pure-button pure-button-warning">Warning Button</button>
+    <button class="pure-button pure-button-secondary">Secondary Button</button>
+</div>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;div&gt;
+    &lt;style scoped&gt;
+
+        .pure-button-success,
+        .pure-button-error,
+        .pure-button-warning,
+        .pure-button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .pure-button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .pure-button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .pure-button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .pure-button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+    &lt;/style&gt;
+
+    &lt;button class=&quot;pure-button pure-button-success&quot;&gt;Success Button&lt;/button&gt;
+    &lt;button class=&quot;pure-button pure-button-error&quot;&gt;Error Button&lt;/button&gt;
+    &lt;button class=&quot;pure-button pure-button-warning&quot;&gt;Warning Button&lt;/button&gt;
+    &lt;button class=&quot;pure-button pure-button-secondary&quot;&gt;Secondary Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+
+    <h3 class="content-subhead">Buttons with different sizes</h3>
+
+  
+    <div>
+    <style scoped>
+
+        .pure-button-xsmall {
+            font-size: 70%;
+        }
+
+        .pure-button-small {
+            font-size: 85%;
+        }
+
+        .pure-button-large {
+            font-size: 110%;
+        }
+
+        .pure-button-xlarge {
+            font-size: 125%;
+        }
+
+    </style>
+
+    <button class="pure-button pure-button-xsmall">Extra Small Button</button>
+    <button class="pure-button pure-button-small">Small Button</button>
+    <button class="pure-button">Regular Button</button>
+    <button class="pure-button pure-button-large">Large Button</button>
+    <button class="pure-button pure-button-xlarge">Extra Large Button</button>
+</div>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;div&gt;
+    &lt;style scoped&gt;
+
+        .pure-button-xsmall {
+            font-size: 70%;
+        }
+
+        .pure-button-small {
+            font-size: 85%;
+        }
+
+        .pure-button-large {
+            font-size: 110%;
+        }
+
+        .pure-button-xlarge {
+            font-size: 125%;
+        }
+
+    &lt;/style&gt;
+
+    &lt;button class=&quot;pure-button pure-button-xsmall&quot;&gt;Extra Small Button&lt;/button&gt;
+    &lt;button class=&quot;pure-button pure-button-small&quot;&gt;Small Button&lt;/button&gt;
+    &lt;button class=&quot;pure-button&quot;&gt;Regular Button&lt;/button&gt;
+    &lt;button class=&quot;pure-button pure-button-large&quot;&gt;Large Button&lt;/button&gt;
+    &lt;button class=&quot;pure-button pure-button-xlarge&quot;&gt;Extra Large Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+
+    <h3 class="content-subhead">Buttons with icons</h3>
+    <p>
+        Pure doesn't ship with icon fonts, but we play nice with existing ones. Incorporating icon fonts with Pure Buttons is easy. In the example below, we're using icon fonts from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Put the <a href="http://fortawesome.github.io/Font-Awesome/get-started/">Font Awesome CSS file</a> on your page and use an &lt;code&gt;&amp;lt;i&amp;gt;&lt;/code&gt; element within a &lt;code&gt;pure-button&lt;/code&gt; element.
+    </p>
+
+  
+    
+<button class="pure-button">
+    <i class="icon-cog"></i>
+    Settings
+</button>
+
+<a class="pure-button" href="#">
+    <i class="icon-shopping-cart icon-large"></i>
+    Checkout
+</a>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;button class=&quot;pure-button&quot;&gt;
+    &lt;i class=&quot;icon-cog&quot;&gt;&lt;/i&gt;
+    Settings
+&lt;/button&gt;
+
+&lt;a class=&quot;pure-button&quot; href=&quot;#&quot;&gt;
+    &lt;i class=&quot;icon-shopping-cart icon-large&quot;&gt;&lt;/i&gt;
+    Checkout
+&lt;/a&gt;</code></pre>
+
+</div>
+
+<script src="http://yui.yahooapis.com/3.10.1/build/yui/yui.js"></script>
+<script>
+YUI().use('node-base', 'node-event-delegate', function (Y) {
+    // This just makes sure that the href="#" attached to the <a> elements
+    // don't scroll you back up the page.
+    Y.one('.content').delegate('click', function (e) {
+        e.preventDefault();
+    }, 'a[href="#"]');
+});
+</script>
+
+
+
+            <div class="legal pure-g-r">
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <p class="legal-license">
+                This site is built with &lt;3 using Pure v0.2.0
+            </p>
+            <p class="legal-license">
+                All code on this site is licensed under the <a href="http://yuilibrary.com/license/">BSD License</a> unless stated otherwise.
+            </p>
+        </div>
+    </div>
+
+    <div class="pure-u-1-5">
+        <div class="l-box legal-logo">
+            <a href="http://yuilibrary.com/">
+                <img src="/img/logo-footer.png" height="30" width="65"
+                     alt="YUI logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <ul class="legal-links pure-g">
+                <li class='pure-u-1-2'>
+                    <a href="https://github.com/yui/pure/">GitHub Project</a>
+                </li>
+                <li class='pure-u-1-2'>
+                    <a href="http://yuilibrary.com/security/">Security Contact Info</a>
+                </li>
+            </ul>
+
+            <p class="legal-copyright">
+                &copy; 2013 Yahoo! Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    
+    
+
+  
+    <script src="/js/ui.js"></script>
+  
+    <script src="/vendor/rainbow/rainbow-min.js"></script>
+  
+
+</body>
+</html>

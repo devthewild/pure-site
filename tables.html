@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tables &amp;ndash; Pure</title>
+
+
+    
+    
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/rainbow/baby-blue.css">
+
+
+
+
+
+    
+<script src="http://use.typekit.net/ajf8ggy.js"></script>
+<script>
+    try { Typekit.load(); } catch (e) {}
+</script>
+
+
+    
+
+</head>
+<body>
+
+    <div class="pure-g-r " id="layout">
+        <a href="#menu" id="menuLink" class="pure-menu-link">
+    <img src="/img/navicon-png2x.png" width="20"
+         alt="Menu toggle">
+</a>
+
+<div class="pure-u" id="menu">
+    <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading" href="/index.html">Pure</a>
+
+        <ul>
+          
+            <li class=" ">
+                <a href="/base.html">Base</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/grids.html">Grids</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/forms.html">Forms</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/buttons.html">Buttons</a>
+            </li>
+          
+            <li class="pure-menu-selected ">
+                <a href="/tables.html">Tables</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/menus.html">Menus</a>
+            </li>
+          
+            <li class=" menu-item-divided">
+                <a href="/customize.html">Customize</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/extend.html">Extend</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/layouts.html">Layouts</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/updates.html">Updates</a>
+            </li>
+          
+
+            <li class="menu-item-divided">
+                <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a>
+            </li>
+
+            <li>
+                <a href="http://yuilibrary.com/">YUI Library</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="pure-u" id="main">
+
+            
+
+
+
+<div class="header pure-u-1">
+    <h1 class="pure-u-1">Tables</h1>
+
+  
+    <h2 class="pure-u">Simple CSS for HTML Tables</h2>
+  
+</div>
+
+
+<div class="content">
+
+    <h2 class="content-subhead">Default Table</h2>
+    <p>
+        To style an HTML table, add the &lt;code&gt;pure-table&lt;/code&gt; classname. This class adds padding and borders to table elements, and emphasizes the header.
+    </p>
+
+    <table class="pure-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Honda</td>
+            <td>Accord</td>
+            <td>2009</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Toyota</td>
+            <td>Camry</td>
+            <td>2012</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Hyundai</td>
+            <td>Elantra</td>
+            <td>2010</td>
+        </tr>
+    </tbody>
+</table>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;table class=&quot;pure-table&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Make&lt;/th&gt;
+            &lt;th&gt;Model&lt;/th&gt;
+            &lt;th&gt;Year&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Honda&lt;/td&gt;
+            &lt;td&gt;Accord&lt;/td&gt;
+            &lt;td&gt;2009&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Toyota&lt;/td&gt;
+            &lt;td&gt;Camry&lt;/td&gt;
+            &lt;td&gt;2012&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Hyundai&lt;/td&gt;
+            &lt;td&gt;Elantra&lt;/td&gt;
+            &lt;td&gt;2010&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Bordered Table</h2>
+    <p>
+        To add horizontal and vertical borders to all cells, add the &lt;code&gt;pure-table-bordered&lt;/code&gt; classname to the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; element.
+    </p>
+
+    <table class="pure-table pure-table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Honda</td>
+            <td>Accord</td>
+            <td>2009</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Toyota</td>
+            <td>Camry</td>
+            <td>2012</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Hyundai</td>
+            <td>Elantra</td>
+            <td>2010</td>
+        </tr>
+    </tbody>
+</table>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;table class=&quot;pure-table pure-table-bordered&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Make&lt;/th&gt;
+            &lt;th&gt;Model&lt;/th&gt;
+            &lt;th&gt;Year&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Honda&lt;/td&gt;
+            &lt;td&gt;Accord&lt;/td&gt;
+            &lt;td&gt;2009&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Toyota&lt;/td&gt;
+            &lt;td&gt;Camry&lt;/td&gt;
+            &lt;td&gt;2012&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Hyundai&lt;/td&gt;
+            &lt;td&gt;Elantra&lt;/td&gt;
+            &lt;td&gt;2010&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Table with Horizontal Borders</h2>
+    <p>
+        If you prefer horizontal lines only, add the &lt;code&gt;pure-table-horizontal&lt;/code&gt; classname to the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; element.
+    </p>
+
+    <table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Honda</td>
+            <td>Accord</td>
+            <td>2009</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Toyota</td>
+            <td>Camry</td>
+            <td>2012</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Hyundai</td>
+            <td>Elantra</td>
+            <td>2010</td>
+        </tr>
+    </tbody>
+</table>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;table class=&quot;pure-table pure-table-horizontal&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Make&lt;/th&gt;
+            &lt;th&gt;Model&lt;/th&gt;
+            &lt;th&gt;Year&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Honda&lt;/td&gt;
+            &lt;td&gt;Accord&lt;/td&gt;
+            &lt;td&gt;2009&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Toyota&lt;/td&gt;
+            &lt;td&gt;Camry&lt;/td&gt;
+            &lt;td&gt;2012&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Hyundai&lt;/td&gt;
+            &lt;td&gt;Elantra&lt;/td&gt;
+            &lt;td&gt;2010&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Striped Table</h2>
+    <p>
+        Large tables are easier to parse visually if rows are easily distinguishable. Adding the &lt;code&gt;pure-table-odd&lt;/code&gt; class name to every other &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; element changes the background of the row and creates a zebra-styled effect.
+    </p>
+
+    <table class="pure-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr class="pure-table-odd">
+            <td>1</td>
+            <td>Honda</td>
+            <td>Accord</td>
+            <td>2009</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Toyota</td>
+            <td>Camry</td>
+            <td>2012</td>
+        </tr>
+
+        <tr class="pure-table-odd">
+            <td>3</td>
+            <td>Hyundai</td>
+            <td>Elantra</td>
+            <td>2010</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Ford</td>
+            <td>Focus</td>
+            <td>2008</td>
+        </tr>
+
+        <tr class="pure-table-odd">
+            <td>5</td>
+            <td>Nissan</td>
+            <td>Sentra</td>
+            <td>2011</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>BMW</td>
+            <td>M3</td>
+            <td>2009</td>
+        </tr>
+
+        <tr class="pure-table-odd">
+            <td>7</td>
+            <td>Honda</td>
+            <td>Civic</td>
+            <td>2010</td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Kia</td>
+            <td>Soul</td>
+            <td>2010</td>
+        </tr>
+    </tbody>
+</table>
+
+
+  <pre class="snippet" data-language="html"><code>&lt;table class=&quot;pure-table&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Make&lt;/th&gt;
+            &lt;th&gt;Model&lt;/th&gt;
+            &lt;th&gt;Year&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr class=&quot;pure-table-odd&quot;&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Honda&lt;/td&gt;
+            &lt;td&gt;Accord&lt;/td&gt;
+            &lt;td&gt;2009&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Toyota&lt;/td&gt;
+            &lt;td&gt;Camry&lt;/td&gt;
+            &lt;td&gt;2012&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;pure-table-odd&quot;&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Hyundai&lt;/td&gt;
+            &lt;td&gt;Elantra&lt;/td&gt;
+            &lt;td&gt;2010&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;4&lt;/td&gt;
+            &lt;td&gt;Ford&lt;/td&gt;
+            &lt;td&gt;Focus&lt;/td&gt;
+            &lt;td&gt;2008&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;pure-table-odd&quot;&gt;
+            &lt;td&gt;5&lt;/td&gt;
+            &lt;td&gt;Nissan&lt;/td&gt;
+            &lt;td&gt;Sentra&lt;/td&gt;
+            &lt;td&gt;2011&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;6&lt;/td&gt;
+            &lt;td&gt;BMW&lt;/td&gt;
+            &lt;td&gt;M3&lt;/td&gt;
+            &lt;td&gt;2009&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;pure-table-odd&quot;&gt;
+            &lt;td&gt;7&lt;/td&gt;
+            &lt;td&gt;Honda&lt;/td&gt;
+            &lt;td&gt;Civic&lt;/td&gt;
+            &lt;td&gt;2010&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;8&lt;/td&gt;
+            &lt;td&gt;Kia&lt;/td&gt;
+            &lt;td&gt;Soul&lt;/td&gt;
+            &lt;td&gt;2010&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
+
+
+            <div class="legal pure-g-r">
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <p class="legal-license">
+                This site is built with &lt;3 using Pure v0.2.0
+            </p>
+            <p class="legal-license">
+                All code on this site is licensed under the <a href="http://yuilibrary.com/license/">BSD License</a> unless stated otherwise.
+            </p>
+        </div>
+    </div>
+
+    <div class="pure-u-1-5">
+        <div class="l-box legal-logo">
+            <a href="http://yuilibrary.com/">
+                <img src="/img/logo-footer.png" height="30" width="65"
+                     alt="YUI logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <ul class="legal-links pure-g">
+                <li class='pure-u-1-2'>
+                    <a href="https://github.com/yui/pure/">GitHub Project</a>
+                </li>
+                <li class='pure-u-1-2'>
+                    <a href="http://yuilibrary.com/security/">Security Contact Info</a>
+                </li>
+            </ul>
+
+            <p class="legal-copyright">
+                &copy; 2013 Yahoo! Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    
+    
+
+  
+    <script src="/js/ui.js"></script>
+  
+    <script src="/vendor/rainbow/rainbow-min.js"></script>
+  
+
+</body>
+</html>

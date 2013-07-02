@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forms &amp;ndash; Pure</title>
+
+
+    
+    
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/rainbow/baby-blue.css">
+
+
+
+
+
+    
+<script src="http://use.typekit.net/ajf8ggy.js"></script>
+<script>
+    try { Typekit.load(); } catch (e) {}
+</script>
+
+
+    
+
+</head>
+<body>
+
+    <div class="pure-g-r " id="layout">
+        <a href="#menu" id="menuLink" class="pure-menu-link">
+    <img src="/img/navicon-png2x.png" width="20"
+         alt="Menu toggle">
+</a>
+
+<div class="pure-u" id="menu">
+    <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading" href="/index.html">Pure</a>
+
+        <ul>
+          
+            <li class=" ">
+                <a href="/base.html">Base</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/grids.html">Grids</a>
+            </li>
+          
+            <li class="pure-menu-selected ">
+                <a href="/forms.html">Forms</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/buttons.html">Buttons</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/tables.html">Tables</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/menus.html">Menus</a>
+            </li>
+          
+            <li class=" menu-item-divided">
+                <a href="/customize.html">Customize</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/extend.html">Extend</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/layouts.html">Layouts</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/updates.html">Updates</a>
+            </li>
+          
+
+            <li class="menu-item-divided">
+                <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a>
+            </li>
+
+            <li>
+                <a href="http://yuilibrary.com/">YUI Library</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="pure-u" id="main">
+
+            
+
+
+
+<div class="header pure-u-1">
+    <h1 class="pure-u-1">Forms</h1>
+
+  
+    <h2 class="pure-u">Simple CSS for HTML Forms</h2>
+  
+</div>
+
+
+<div class="content">
+
+    <h2 class="content-subhead">Default Form</h2>
+    <p>
+        To create a default inline form, add the &lt;code&gt;pure-form&lt;/code&gt; classname to any &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element.
+    </p>
+
+  
+    <form class="pure-form">
+    <fieldset>
+        <legend>A compact inline form</legend>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <label for="default-remember">
+            <input id="default-remember" type="checkbox"> Remember me
+        </label>
+
+        <button type="submit" class="pure-button notice">Sign in</button>
+    </fieldset>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;A compact inline form&lt;/legend&gt;
+
+        &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+        &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+
+        &lt;label for=&quot;remember&quot;&gt;
+            &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; Remember me
+        &lt;/label&gt;
+
+        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;Sign in&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+
+
+    <h2 class="content-subhead" id="stacked-form">Stacked Form</h2>
+    <p>
+        To create a stacked form with input elements below the labels, add the &lt;code&gt;pure-form-stacked&lt;/code&gt; classname to a &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element alongside &lt;code&gt;pure-form&lt;/code&gt;.
+    </p>
+
+  
+    <form class="pure-form pure-form-stacked">
+    <fieldset>
+        <legend>A Stacked Form</legend>
+
+        <label for="stacked-email">Email</label>
+        <input id="stacked-email" type="email" placeholder="Email">
+
+        <label for="stacked-password">Password</label>
+        <input id="stacked-password" type="password" placeholder="Password">
+
+        <label for="stacked-state">State</label>
+        <select id="stacked-state">
+            <option>AL</option>
+            <option>CA</option>
+            <option>IL</option>
+        </select>
+
+        <label for="stacked-remember" class="pure-checkbox">
+            <input id="stacked-remember" type="checkbox"> Remember me
+        </label>
+
+        <button type="submit" class="pure-button notice">Sign in</button>
+    </fieldset>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form pure-form-stacked&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;A Stacked Form&lt;/legend&gt;
+
+        &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+        &lt;input id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+
+        &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+        &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+
+        &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+        &lt;select id=&quot;state&quot;&gt;
+            &lt;option&gt;AL&lt;/option&gt;
+            &lt;option&gt;CA&lt;/option&gt;
+            &lt;option&gt;IL&lt;/option&gt;
+        &lt;/select&gt;
+
+        &lt;label for=&quot;remember&quot; class=&quot;pure-checkbox&quot;&gt;
+            &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; Remember me
+        &lt;/label&gt;
+
+        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;Sign in&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Aligned Form</h2>
+    <p>
+        To create an aligned form, add the &lt;code&gt;pure-form-aligned&lt;/code&gt; classname to a &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element alongside &lt;code&gt;pure-form&lt;/code&gt;. In an aligned form, the labels are right-aligned against the form input controls, but on smaller screens revert to a <a href="#stacked-form">stacked form</a>.
+    </p>
+
+  
+    <form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="aligned-name">Username</label>
+            <input id="aligned-name" type="text" placeholder="Username">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="aligned-password">Password</label>
+            <input id="aligned-password" type="password" placeholder="Password">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="aligned-email">Email Address</label>
+            <input id="aligned-email" type="email" placeholder="Email Address">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="aligned-foo">Supercalifragilistic Label</label>
+            <input id="aligned-foo" type="text" placeholder="Enter something here...">
+        </div>
+
+        <div class="pure-controls">
+            <label for="aligned-cb" class="pure-checkbox">
+                <input id="aligned-cb" type="checkbox"> I've read the terms and conditions
+            </label>
+
+            <button type="submit" class="pure-button">Submit</button>
+        </div>
+    </fieldset>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form pure-form-aligned&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;div class=&quot;pure-control-group&quot;&gt;
+            &lt;label for=&quot;name&quot;&gt;Username&lt;/label&gt;
+            &lt;input id=&quot;name&quot; type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;pure-control-group&quot;&gt;
+            &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+            &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;pure-control-group&quot;&gt;
+            &lt;label for=&quot;email&quot;&gt;Email Address&lt;/label&gt;
+            &lt;input id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;Email Address&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;pure-control-group&quot;&gt;
+            &lt;label for=&quot;foo&quot;&gt;Supercalifragilistic Label&lt;/label&gt;
+            &lt;input id=&quot;foo&quot; type=&quot;text&quot; placeholder=&quot;Enter something here...&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;pure-controls&quot;&gt;
+            &lt;label for=&quot;cb&quot; class=&quot;pure-checkbox&quot;&gt;
+                &lt;input id=&quot;cb&quot; type=&quot;checkbox&quot;&gt; I&#x27;ve read the terms and conditions
+            &lt;/label&gt;
+
+            &lt;button type=&quot;submit&quot; class=&quot;pure-button&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+
+    <h2 class="content-subhead">Multi-Column Form (with Pure Grids)</h2>
+    <p>
+        To create multi-column forms, include your form elements within a <a href="/grids.html">Pure Grid</a>. The following example uses Pure Grids with a stacked form.
+    </p>
+
+  
+    <form class="pure-form pure-form-stacked">
+    <fieldset>
+        <legend>Legend</legend>
+
+        <div class="pure-g-r">
+            <div class="pure-u-1-3">
+                <label for="multi-first-name">First Name</label>
+                <input id="multi-first-name" type="text">
+            </div>
+
+            <div class="pure-u-1-3">
+                <label for="multi-last-name">Last Name</label>
+                <input id="multi-last-name" type="text">
+            </div>
+
+            <div class="pure-u-1-3">
+                <label for="multi-email">E-Mail</label>
+                <input id="multi-email" type="email" required>
+            </div>
+
+            <div class="pure-u-1-3">
+                <label for="multi-city">City</label>
+                <input id="multi-city" type="text">
+            </div>
+
+            <div class="pure-u-1-3">
+                <label for="multi-state">State</label>
+                <select id="multi-state" class="pure-input-medium">
+                    <option>AL</option>
+                    <option>CA</option>
+                    <option>IL</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="multi-terms" class="pure-checkbox">
+            <input id="multi-terms" type="checkbox"> I've read the terms and conditions
+        </label>
+
+        <button type="submit" class="pure-button notice">Submit</button>
+    </fieldset>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form pure-form-stacked&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Legend&lt;/legend&gt;
+
+        &lt;div class=&quot;pure-g-r&quot;&gt;
+            &lt;div class=&quot;pure-u-1-3&quot;&gt;
+                &lt;label for=&quot;first-name&quot;&gt;First Name&lt;/label&gt;
+                &lt;input id=&quot;first-name&quot; type=&quot;text&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;pure-u-1-3&quot;&gt;
+                &lt;label for=&quot;last-name&quot;&gt;Last Name&lt;/label&gt;
+                &lt;input id=&quot;last-name&quot; type=&quot;text&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;pure-u-1-3&quot;&gt;
+                &lt;label for=&quot;email&quot;&gt;E-Mail&lt;/label&gt;
+                &lt;input id=&quot;email&quot; type=&quot;email&quot; required&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;pure-u-1-3&quot;&gt;
+                &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
+                &lt;input id=&quot;city&quot; type=&quot;text&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;pure-u-1-3&quot;&gt;
+                &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+                &lt;select id=&quot;state&quot; class=&quot;pure-input-medium&quot;&gt;
+                    &lt;option&gt;AL&lt;/option&gt;
+                    &lt;option&gt;CA&lt;/option&gt;
+                    &lt;option&gt;IL&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;label for=&quot;terms&quot; class=&quot;pure-checkbox&quot;&gt;
+            &lt;input id=&quot;terms&quot; type=&quot;checkbox&quot;&gt; I&#x27;ve read the terms and conditions
+        &lt;/label&gt;
+
+        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;Submit&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+
+    <h2 class="content-subhead">Grouped Inputs</h2>
+    <p>
+        To group sets of text-based input elements, wrap them in a &lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; element with a &lt;code&gt;pure-group&lt;/code&gt; classname. Grouped inputs work well for sign-up forms and look natural on mobile devices.
+    </p>
+
+  
+    <form class="pure-form">
+    <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Username">
+        <input type="text" class="pure-input-1-2" placeholder="Password">
+        <input type="email" class="pure-input-1-2" placeholder="Email">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Another Group">
+        <input type="text" class="pure-input-1-2" placeholder="More Stuff">
+    </fieldset>
+
+    <button type="submit" class="pure-button pure-input-1-2 notice">Sign in</button>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
+    &lt;fieldset class=&quot;pure-group&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;pure-input-1-2&quot; placeholder=&quot;Username&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;pure-input-1-2&quot; placeholder=&quot;Password&quot;&gt;
+        &lt;input type=&quot;email&quot; class=&quot;pure-input-1-2&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset class=&quot;pure-group&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;pure-input-1-2&quot; placeholder=&quot;Another Group&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;pure-input-1-2&quot; placeholder=&quot;More Stuff&quot;&gt;
+    &lt;/fieldset&gt;
+
+    &lt;button type=&quot;submit&quot; class=&quot;pure-button pure-input-1-2 notice&quot;&gt;Sign in&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Input Sizing</h2>
+    <p>
+        Input elements have fluid width sizes in a syntax that is similar to <a href="/index.html">Pure Grids</a>. You can apply a &lt;code&gt;pure-input-*&lt;/code&gt; class to these elements.
+    </p>
+
+  
+    <form class="pure-form">
+    <input class="pure-input-1" type="text" placeholder=".pure-input-1"><br>
+    <input class="pure-input-2-3" type="text" placeholder=".pure-input-2-3"><br>
+    <input class="pure-input-1-2" type="text" placeholder=".pure-input-1-2"><br>
+    <input class="pure-input-1-3" type="text" placeholder=".pure-input-1-3"><br>
+    <input class="pure-input-1-4" type="text" placeholder=".pure-input-1-4"><br>
+ </form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
+    &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-input-1&quot;&gt;&lt;br&gt;
+    &lt;input class=&quot;pure-input-2-3&quot; type=&quot;text&quot; placeholder=&quot;.pure-input-2-3&quot;&gt;&lt;br&gt;
+    &lt;input class=&quot;pure-input-1-2&quot; type=&quot;text&quot; placeholder=&quot;.pure-input-1-2&quot;&gt;&lt;br&gt;
+    &lt;input class=&quot;pure-input-1-3&quot; type=&quot;text&quot; placeholder=&quot;.pure-input-1-3&quot;&gt;&lt;br&gt;
+    &lt;input class=&quot;pure-input-1-4&quot; type=&quot;text&quot; placeholder=&quot;.pure-input-1-4&quot;&gt;&lt;br&gt;
+ &lt;/form&gt;</code></pre>
+
+    <p>
+        You can control input sizing even further by wrapping them in grid containers. In the example below, the &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; elements have a &lt;code&gt;pure-input-1&lt;/code&gt; class, but are wrapped in a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; with a specific grid class.
+    </p>
+
+  
+    <form class="pure-form pure-g">
+    <div class="pure-u-1-4">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-4">
+    </div>
+    <div class="pure-u-3-4">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-3-4">
+    </div>
+
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-2">
+    </div>
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-2">
+    </div>
+
+    <div class="pure-u-1-8">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-8">
+    </div>
+    <div class="pure-u-1-8">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-8">
+    </div>
+    <div class="pure-u-1-4">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-4">
+    </div>
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-2">
+    </div>
+
+    <div class="pure-u-1-5">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-5">
+    </div>
+    <div class="pure-u-2-5">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-2-5">
+    </div>
+    <div class="pure-u-2-5">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-2-5">
+    </div>
+
+    <div class="pure-u-1">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1">
+    </div>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form pure-g&quot;&gt;
+    &lt;div class=&quot;pure-u-1-4&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1-4&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pure-u-3-4&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-3-4&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;pure-u-1-2&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1-2&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pure-u-1-2&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1-2&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;pure-u-1-8&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1-8&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pure-u-1-8&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1-8&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pure-u-1-4&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1-4&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pure-u-1-2&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1-2&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;pure-u-1-5&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1-5&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pure-u-2-5&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-2-5&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;pure-u-2-5&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-2-5&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;pure-u-1&quot;&gt;
+        &lt;input class=&quot;pure-input-1&quot; type=&quot;text&quot; placeholder=&quot;.pure-u-1&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Required Inputs</h2>
+    <p>
+        To mark a form control as required, add the &lt;code&gt;required&lt;/code&gt; attribute.
+    </p>
+
+  
+    <form class="pure-form">
+    <input type="email" placeholder="Requires an email" required>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
+    &lt;input type=&quot;email&quot; placeholder=&quot;Requires an email&quot; required&gt;
+&lt;/form&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Disabled Inputs</h2>
+    <p>
+        To disable a form control, add the &lt;code&gt;disabled&lt;/code&gt; attribute.
+    </p>
+
+  
+    <form class="pure-form">
+    <input type="text" placeholder="Disabled input here..." disabled>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled&gt;
+&lt;/form&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Rounded Inputs</h2>
+    <p>
+        To display a form control with rounded corners, add the &lt;code&gt;pure-input-rounded&lt;/code&gt; classname.
+    </p>
+
+  
+    <form class="pure-form">
+    <input type="text" class="pure-input-rounded">
+    <button type="submit" class="pure-button">Search</button>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;pure-input-rounded&quot;&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;pure-button&quot;&gt;Search&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+
+    <h2 class="content-subhead">Checkboxes and Radios</h2>
+    <p>
+        To normalize and align checkboxes and radio inputs, add the &lt;code&gt;pure-checkbox&lt;/code&gt; or &lt;code&gt;pure-radio&lt;/code&gt; classname.
+    </p>
+
+  
+    <form class="pure-form">
+    <label for="checkbox-radio-option-one" class="pure-checkbox">
+        <input id="checkbox-radio-option-one" type="checkbox" value="">
+        Here's option one.
+    </label>
+
+    <label for="checkbox-radio-option-two" class="pure-radio">
+        <input id="checkbox-radio-option-two" type="radio" name="optionsRadios" value="option1" checked>
+        Here's a radio button. You can choose this one..
+    </label>
+
+    <label for="checkbox-radio-option-three" class="pure-radio">
+        <input id="checkbox-radio-option-three" type="radio" name="optionsRadios" value="option2">
+        ..Or this one!
+    </label>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
+    &lt;label for=&quot;option-one&quot; class=&quot;pure-checkbox&quot;&gt;
+        &lt;input id=&quot;option-one&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;
+        Here&#x27;s option one.
+    &lt;/label&gt;
+
+    &lt;label for=&quot;option-two&quot; class=&quot;pure-radio&quot;&gt;
+        &lt;input id=&quot;option-two&quot; type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option1&quot; checked&gt;
+        Here&#x27;s a radio button. You can choose this one..
+    &lt;/label&gt;
+
+    &lt;label for=&quot;option-three&quot; class=&quot;pure-radio&quot;&gt;
+        &lt;input id=&quot;option-three&quot; type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option2&quot;&gt;
+        ..Or this one!
+    &lt;/label&gt;
+&lt;/form&gt;</code></pre>
+</div>
+
+
+            <div class="legal pure-g-r">
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <p class="legal-license">
+                This site is built with &lt;3 using Pure v0.2.0
+            </p>
+            <p class="legal-license">
+                All code on this site is licensed under the <a href="http://yuilibrary.com/license/">BSD License</a> unless stated otherwise.
+            </p>
+        </div>
+    </div>
+
+    <div class="pure-u-1-5">
+        <div class="l-box legal-logo">
+            <a href="http://yuilibrary.com/">
+                <img src="/img/logo-footer.png" height="30" width="65"
+                     alt="YUI logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <ul class="legal-links pure-g">
+                <li class='pure-u-1-2'>
+                    <a href="https://github.com/yui/pure/">GitHub Project</a>
+                </li>
+                <li class='pure-u-1-2'>
+                    <a href="http://yuilibrary.com/security/">Security Contact Info</a>
+                </li>
+            </ul>
+
+            <p class="legal-copyright">
+                &copy; 2013 Yahoo! Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    
+    
+
+  
+    <script src="/js/ui.js"></script>
+  
+    <script src="/vendor/rainbow/rainbow-min.js"></script>
+  
+
+</body>
+</html>

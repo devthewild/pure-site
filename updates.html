@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Updates &amp;ndash; Pure</title>
+
+
+    
+    
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/updates.css">
+
+<link rel="stylesheet" href="/css/rainbow/baby-blue.css">
+
+
+
+
+
+    
+<script src="http://use.typekit.net/ajf8ggy.js"></script>
+<script>
+    try { Typekit.load(); } catch (e) {}
+</script>
+
+
+    
+
+</head>
+<body>
+
+    <div class="pure-g-r " id="layout">
+        <a href="#menu" id="menuLink" class="pure-menu-link">
+    <img src="/img/navicon-png2x.png" width="20"
+         alt="Menu toggle">
+</a>
+
+<div class="pure-u" id="menu">
+    <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading" href="/index.html">Pure</a>
+
+        <ul>
+          
+            <li class=" ">
+                <a href="/base.html">Base</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/grids.html">Grids</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/forms.html">Forms</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/buttons.html">Buttons</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/tables.html">Tables</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/menus.html">Menus</a>
+            </li>
+          
+            <li class=" menu-item-divided">
+                <a href="/customize.html">Customize</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/extend.html">Extend</a>
+            </li>
+          
+            <li class=" ">
+                <a href="/layouts.html">Layouts</a>
+            </li>
+          
+            <li class="pure-menu-selected ">
+                <a href="/updates.html">Updates</a>
+            </li>
+          
+
+            <li class="menu-item-divided">
+                <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a>
+            </li>
+
+            <li>
+                <a href="http://yuilibrary.com/">YUI Library</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="pure-u" id="main">
+
+            
+
+
+
+
+
+<div class="header pure-u-1">
+    <h1 class="pure-u-1">Updates</h1>
+
+  
+    <h2 class="pure-u">The latest from the Pure project</h2>
+  
+</div>
+
+
+<div class="content">
+    <div class="post pure-u-1">
+        <h2 class="content-subhead">Releasing Pure 0.2.0</h2>
+        <div class="post-meta">
+            June 11, 2013 | <a href="https://github.com/yui/pure/blob/master/HISTORY.md#020-2013-06-11">View Changelog</a>
+        </div>
+        <p>
+            Two short weeks after initially launching Pure, we're excited to release <b>Pure 0.2.0</b>, the next version of Pure! You can start using it today by pasting this &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt; element into your &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;, or pulling it from <a href="http://github.com/yui/pure/">GitHub</a>.
+        </p>
+
+      <pre class="snippet" data-language="html"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;http://yui.yahooapis.com/pure/0.2.0/pure-min.css&quot;&gt;</code></pre>
+
+        <h3>What's new?</h3>
+
+        <p>
+            We fixed our &lt;code&gt;:focus&lt;/code&gt; issues, improving the accessibility that Pure gives your web project out of the box. We added &lt;code&gt;:focus&lt;/code&gt; rules to our existing &lt;code&gt;:hover&lt;/code&gt; rules, and removed &lt;code&gt;outline&lt;/code&gt; where applicable. The Pure website has also been updated to be more accessible to keyboard users and screen-readers.
+        </p>
+        <p>
+            In addition, we applied improvements to most of the components within Pure based on people's feedback and by tackling low-hanging bugs and enhancements. A full list of the changes in this release can be found in Pure's <a href="#">&lt;code&gt;HISTORY.md&lt;/code&gt;</a>.
+        <p>
+
+        <p><a href="https://github.com/yui/pure/blob/master/HISTORY.md#020-2013-06-11" class="pure-button pure-button-primary">View 0.2.0 Changelog</a></p>
+
+        <h3>Improved Developer Workflow</h3>
+
+        <p>
+            We also put a lot of work into improving the workflow for people working on Pure. The goal was to make it easier for people to contribute to the project (and the make our lives easier) by improving our tooling and integration with <a href="https://github.com/yui/pure-site">this website's code base</a>.
+        </p>
+
+        <h4>Testing and CI</h4>
+        <p>
+            We wanted to add some basic tests to at least sanity check our code, and did this by integrating <a href="https://github.com/stubbornella/csslint">CSSLint</a> into our Gruntfile. The cool thing is that we hooked up <a href="https://travis-ci.org/yui/pure">Travis CI</a> so anytime someone issues a pull request it will be linted to make sure there's no typos or crazy code.
+        </p>
+
+        <h4>Auto Building with Grunt</h4>
+        <p>
+            To save your fingers from The Developer Konami Code: ⌘⇥ ↑ ⏎ use can now use the &lt;code&gt;grunt watch&lt;/code&gt; task to build Pure anytime a CSS file changes!
+        </p>
+
+        <h4>Testing This Site with Pure Served Locally</h4>
+        <p>
+            This website dogfoods Pure making it a natural place to test the latest changes, especially during development. We added a feature to support <a href="https://github.com/yui/pure-site#running-with-pure-served-locally">running the website with Pure served locally</a>. When you combine this with auto building Pure via &lt;code&gt;grunt watch&lt;/code&gt; your day becomes bright, filled with sunshine!
+        </p>
+
+        <h4>Formalized Contributing Guidelines</h4>
+        <p>
+            We created a <a href="https://github.com/yui/pure/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> for Pure, which explains how you can contribute to the project. Give it a quick read before sending your pull requests!
+        </p>
+
+        <h3>Thanks to the Community</h3>
+
+        <p>
+            We've been overwhelmed by the feedback and the support that we've received since launching Pure. Although Pure is very young, it already has a vibrant community building up around it. Thanks to everyone who has been <a href="https://github.com/yui/pure/issues">opening issues</a> and <a href="https://github.com/yui/pure/pulls?direction=desc&amp;page=1&amp;sort=created&amp;state=closed">sending pull requests</a>. And a special shout-out to <a href="https://github.com/dannytatom">@dannytatom</a>, <a href="https://github.com/rcbdev">@rcbdev</a>, <a href="https://github.com/codepb">@codepb</a>, and <a href="https://github.com/mseri">@mseri</a> whose contributions were merged into the 0.2.0 release. Keep 'em coming!
+        </p>
+    </div>
+
+    <aside>
+        <p>
+            If you have questions regarding Pure, get in touch with <a href="http://twitter.com/ericf/" title="Eric on Twitter">@ericf</a> and <a href="http://twitter.com/tilomitra/" title="Tilo on Twitter">@tilomitra</a>.
+        </p>
+    </aside>
+</div>
+
+
+            <div class="legal pure-g-r">
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <p class="legal-license">
+                This site is built with &lt;3 using Pure v0.2.0
+            </p>
+            <p class="legal-license">
+                All code on this site is licensed under the <a href="http://yuilibrary.com/license/">BSD License</a> unless stated otherwise.
+            </p>
+        </div>
+    </div>
+
+    <div class="pure-u-1-5">
+        <div class="l-box legal-logo">
+            <a href="http://yuilibrary.com/">
+                <img src="/img/logo-footer.png" height="30" width="65"
+                     alt="YUI logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="pure-u-2-5">
+        <div class="l-box">
+            <ul class="legal-links pure-g">
+                <li class='pure-u-1-2'>
+                    <a href="https://github.com/yui/pure/">GitHub Project</a>
+                </li>
+                <li class='pure-u-1-2'>
+                    <a href="http://yuilibrary.com/security/">Security Contact Info</a>
+                </li>
+            </ul>
+
+            <p class="legal-copyright">
+                &copy; 2013 Yahoo! Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    
+    
+
+  
+    <script src="/js/ui.js"></script>
+  
+    <script src="/vendor/rainbow/rainbow-min.js"></script>
+  
+
+</body>
+</html>
