@@ -1,57 +1,57 @@
-{{setTitle     "Base"}}
-{{setSubTitle  "Leveraging Normalize.css, an HTML5-ready alternative to CSS resets"}}
+{{setTitle     "기본"}}
+{{setSubTitle  "Normalize.css 기반으로 HTML5를 위한 CSS 리셋"}}
 {{setActiveNav "base"}}
 
 {{> header}}
 
 <div class="content">
-    <h2 class="content-subhead">The Foundation</h2>
+    <h2 class="content-subhead">기초</h2>
     <p>
-        All modules in Pure build on top of <a href="http://necolas.github.com/normalize.css/">Normalize.css</a>. It's our foundational layer to maintain some degree of cross-browser consistency. We use Normalize v1.x because it supports older versions of Internet Explorer. We like Normalize so much that we put it on our CDN. You can pull in Normalize.css by adding this {{code "<link>"}} element on your page:
+        Pure의 모든 모듈들은 <a href="http://necolas.github.com/normalize.css/">Normalize.css</a>위에 만들어졌다. 공통된 크로스 브라우징을 지원하기 위한 기본적인 층이다. 구버전의 인터넷 익스플로러 버전을 지원하기 위해 Normalize v1.x를 사용한다. 우리의 CDN에 올려놓을 정도로 매우 Normalize를 좋아한다. {{code "<link>"}} 엘리먼트를 페이지에 추가해서 Normalize.css를 가져다 쓸 수 있다:
     </p>
 
     {{#code}}
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/{{pure_version}}/base-min.css">
     {{/code}}
 
-    <h3>A bit about Normalize.css</h3>
+    <h3>Normalize.css의 개요</h3>
     <p>
-        <a href="http://necolas.github.com/normalize.css/">Normalize.css</a> is an open-source project by <a href="http://twitter.com/necolas">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal">Jonathan Neal</a>. <a href="http://nicolasgallagher.com/about-normalize-css/">In their own words</a>:
+        <a href="http://necolas.github.com/normalize.css/">Normalize.css</a>는 <a href="http://twitter.com/necolas">Nicolas Gallagher</a>와 <a href="http://twitter.com/jon_neal">Jonathan Neal</a>가 만든 오픈소스다. <a href="http://nicolasgallagher.com/about-normalize-css/">그들의 말에 의하면</a>:
     </p>
 
     <blockquote class="content-quote">
-        Normalize.css is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements. It’s a modern, HTML5-ready, alternative to the traditional CSS reset."
+        Normalize.css는 HTML 엘리번트들의 기본 스타일을 유지시켜서 일관된 크로스 브라우징을 더 쉽게 제공해주는 작은 CSS 파일이다. 요즘에는 HTML5 준비를 위해 기존 CSS 리셋에 대신 쓰인다.
     </blockquote>
 
     <p>
-        Normalize.css comes with <a href="https://github.com/necolas/normalize.css/wiki">great documentation</a> and a <a href="http://nicolasgallagher.com/about-normalize-css/">thorough guide</a> explaining how it differs from a traditional reset. You can also check out YUI's <a href="http://yuilibrary.com/yui/docs/cssnormalize/">CSSNormalize</a> module, which includes the generic Normalize along with a <a href="http://yuilibrary.com/yui/docs/cssnormalize/#context">contextual version</a>. The contextual version of Normalize only applies normalized styles to elements that are children of an element with the class name {{code "yui3-normalized"}}.
+        Normalize.css에는 <a href="https://github.com/necolas/normalize.css/wiki">훌륭한 문서</a>와 어떻게 기존의 CSS 리셋과 다른지에 대해 설명한 <a href="http://nicolasgallagher.com/about-normalize-css/">완벽한 가이드</a>가 있다. 또한 YUI의 <a href="http://yuilibrary.com/yui/docs/cssnormalize/">CSSNormalize</a> 모듈을 확인할 수 있는데, 이것은 <a href="http://yuilibrary.com/yui/docs/cssnormalize/#context">context에 대한 버전</a>을 포함해 일반적인 Normalize가 포함되어있다. Normailze의 컨텍스트에 대한 버전은 {{code "yui3-normalized"}} 클래스 이름을 갖는 엘리먼트의 자식들에게만 normalize된 스타일들을 적용한다.
     </p>
 
-    <h2 class="content-subhead">Typography</h2>
+    <h2 class="content-subhead">타이포그라피</h2>
     <p>
-        To keep Pure lean and extensible, we do not add any typographic styles over the foundational layer provided by Normalize. This means that you get headings with different sizes, blockquotes, lists, definition lists, and more, but their styles are minimal and easy to override.
+        Pure를 확장가능하게 유지하기 위해서 Normalize가 제공하는 기본층 위에 어떤 타이포그라피 스타일도 추가하지 않았다. 즉, 다른 크기의 표제(header)들, 인용구, 리스트, 정의 리스트, 기타 등등의 스타일이 최소한만 있으며 오버라이드하기 쉽다는 것을 이야기이다.
     </p>
 
 
-    <h2 class="content-subhead">Headings</h2>
+    <h2 class="content-subhead">표제</h2>
     <p>
-        Headings run from 1 to 6 in decreasing size. Font sizes are defined in {{code "em"}}.
+        표제들은 1에서 6까지이며 숫자가 커지면 사이즈는 작아진다. 폰트 사이즈는 <code>em</code>으로 정의되어있다.
     </p>
 
     {{> base/headings}}
 
 
-    <h2 class="content-subhead">Lists</h2>
+    <h2 class="content-subhead">리스트</h2>
     <p>
-        Lists come in different forms. There are unordered lists, ordered lists, and definition lists. Normalize provides basic styling and cross-browser consistency for these lists. You can style these further in your specific application. If you're looking to use lists to make menus, check out <a href="{{pages.menus}}">Menu CSS</a>.
+        여러가지 모양의 리스트들이 있다. 순서없는 리스트, 순서있는 리스트, 그리고 정의 리스트. Normalize는 리스트에 기본 스타일과 일관된 크로스브라우징을 제공한다. 특정 어플리케이션에서 나중에 스타일을 적용할 수 있다. 메뉴를 만들기 위해 리스트를 사용하려면 <a href="{{pages.menus}}">메뉴</a>를 참고.
     </p>
 
     {{> base/lists}}
 
 
-    <h2 class="content-subhead">Blockquotes</h2>
+    <h2 class="content-subhead">인용구</h2>
     <p>
-        Blockquotes encompass text that is meant to represent a quotation. By default, blockquotes look like regular text, except that they are indented. This gives you the freedom to set your own styles on top. Here's a default one:
+        인용구는 인용을 표시하기 위해 텍스트를 둘러싼 것이다. 한단계 들어가있는걸 제외하면 기본적으로 보통 텍스트처럼 보인다. 맨 위에 스타일을 정의할 수 있는 자유가 있다는 것이다. 기본적으로는 이렇다:
     </p>
 
     {{> base/blockquote}}
@@ -61,17 +61,17 @@
   {{/code}}
 
     <p>
-        Taking advantage of the lack of default styles, we've customized the blockquotes on this site to look a little different. We encourage you to do the same based on how your site looks.
+        기본 스타일이 없는 장점 덕분에 조금씩 다르게 커스텀된 인용구 스타일이 있다. 사이트를 어떻게 꾸밀지 생각하고 같은 것을 사용하길 권한다.
     </p>
 
     <blockquote class="content-quote">
-        One small step for man, one giant leap for mankind.
+        그에게는 작은 한 걸음이었지만 인류에게는 위대한 도약이다.
     </blockquote>
 
 
-    <h2 class="content-subhead">Abbreviations</h2>
+    <h2 class="content-subhead">축약</h2>
     <p>
-        The {{code "<abbr>"}} represents an abbreviation. If a {{code "title"}} attribute is provided, it'll show up on hover. Abbreviations generally have a small dotted underline.
+        <code>&lt;abbr&gt;</code>은 축약(abbreviation)을 나타낸다. <code>title</code> 속성을 설정하면 텍스트 위에 뜨게 된다. 일반적으로 축약은 작은 점선밑줄로 보인다.
     </p>
 
     {{> base/abbr}}
@@ -81,9 +81,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Addresses</h2>
+    <h2 class="content-subhead">주소</h2>
     <p>
-        The {{code "<address>"}} is used to reference contact information. By default, addresses have no specific styling. However, they can be styled using the various inline styles available through Normalize.
+        <code>&lt;address&gt;</code>는 연락처 정보를 나타내기 위해 사용된다. 기본적으로 주소는 특정 스타일이 없지만 Normalize를 통해 다양한 인라인 스타일을 입힐 수 있다.
     </p>
 
     {{> base/address}}
@@ -93,20 +93,20 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Inline Styles</h2>
+    <h2 class="content-subhead">인라인 스타일</h2>
     <p>
-        There are numerous other inline styles that can be used. Here's a quick list from the <a href="http://github.com/necolas/normalize.css">Normalize documentation</a>:
+        사용할 수 있는 많은 인라인 스타일들이 있다. <a href="http://github.com/necolas/normalize.css">Normalize 문서</a>에서 리스트들을 볼 수 있다:
     </p>
 
     {{> base/inline}}
 
 
-    <h2 class="content-subhead">Moving beyond Normalize</h2>
+    <h2 class="content-subhead">Normalize를 너머서</h2>
     <p>
-        Normalize.css is a great starting place for your project, but some HTML elements such as forms, tables, and menus require more styling than what's provided by Normalize.
+        Normalize.css는 프로젝트를 위한 훌륭한 시작이지만 폼, 테이블, 그리고 메뉴같은 어떤 HTML 엘리먼트들은 Normalize가 제공하는 것보다 더 많은 스타일링이 필요하다.
     </p>
 
     <p>
-        We made a more opinionated look and feel for these elements, while keeping them minimal enough so that you can customize them for your site or app's needs. Check out our CSS for <a href="{{pages.forms}}">Forms</a>, <a href="{{pages.tables}}">Tables</a>, and <a href="{{pages.menus}}">Menus</a>.
+        사용자의 사이트나 앱에 맞춰서 커스텀할 수 있을 정도로 충분히 작으면서도 동시에 엘리먼트들에게 더 확실한 룩앤필을 제공하고 있다. <a href="{{pages.forms}}">폼</a>, <a href="{{pages.tables}}">테이블</a>, 그리고 <a href="{{pages.menus}}">메뉴</a>를 확인.
     </p>
 </div>

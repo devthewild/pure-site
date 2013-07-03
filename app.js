@@ -102,16 +102,16 @@ function routePage(id, path, label, callbacks) {
 }
 
 routePage('home',      '/',                        routes.render('home'));
-routePage('base',      '/base/',      'Base',      routes.render('base'));
-routePage('grids',     '/grids/',     'Grids',     routes.render('grids'));
-routePage('forms',     '/forms/',     'Forms',     routes.render('forms'));
-routePage('buttons',   '/buttons/',   'Buttons',   routes.render('buttons'));
-routePage('tables',    '/tables/',    'Tables',    routes.render('tables'));
-routePage('menus',     '/menus/',     'Menus',     routes.render('menus'));
-routePage('customize', '/customize/', 'Customize', routes.render('customize'));
-routePage('extend',    '/extend/',    'Extend',    routes.render('extend'));
-routePage('layouts',   '/layouts/',   'Layouts',   routes.render('layouts'));
-routePage('updates',   '/updates/',   'Updates',   routes.render('updates'));
+routePage('base',      '/base/',      '기초',      routes.render('base'));
+routePage('grids',     '/grids/',     '그리드',     routes.render('grids'));
+routePage('forms',     '/forms/',     '폼',     routes.render('forms'));
+routePage('buttons',   '/buttons/',   '버튼',   routes.render('buttons'));
+routePage('tables',    '/tables/',    '테이블',    routes.render('tables'));
+routePage('menus',     '/menus/',     '메뉴',     routes.render('menus'));
+routePage('customize', '/customize/', '커스텀하기', routes.render('customize'));
+routePage('extend',    '/extend/',    '확장하기',    routes.render('extend'));
+routePage('layouts',   '/layouts/',   '레이아웃들',   routes.render('layouts'));
+routePage('updates',   '/updates/',   '업데이트',   routes.render('updates'));
 
 routePage('layoutsGallery',   '/layouts/gallery/',   routes.render('layouts/gallery', 'blank'));
 routePage('layoutsMarketing', '/layouts/marketing/', routes.render('layouts/marketing', 'blank'));
