@@ -1,12 +1,12 @@
-{{setTitle     "Menus"}}
-{{setSubTitle  "Simple CSS for Menus"}}
+{{setTitle     "메뉴"}}
+{{setSubTitle  "메뉴를 위한 간단한 CSS"}}
 {{setActiveNav "menus"}}
 
 {{addLocalCSS "/css/menus.css"}}
 
 {{> header}}
 
-<!-- adding to the top so that the dropdown example code can run -->
+<!-- 드랍다운 예제 코드가 작동하려면 이걸 최상위에 추가 -->
 <script>
     {{{state}}}
 </script>
@@ -16,9 +16,9 @@
 
 <div class="content">
 
-    <h2 class="content-subhead">Horizontal Menu</h2>
+    <h2 class="content-subhead">수평 메뉴</h2>
     <p>
-        To create a horizontal menu, add the {{code "pure-menu-horizontal"}} class name. You can mark the active list element by adding the {{code "pure-menu-selected"}} class to the list element.
+        수평 메뉴를 만들려면 <code>pure-menu-horizontal</code> 클래스이름을 추가하면 된다. 활성화된 메뉴는 <code>pure-menu-selected</code>를 리스트 엘리먼트에 추가해서 표시할 수 있다.
     </p>
 
     {{> menus/horizontal}}
@@ -28,9 +28,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Menu with Headings</h2>
+    <h2 class="content-subhead">제목 추가하기</h2>
     <p>
-        To add headings to your menu, place some content outside the {{code "<ul>"}} element and wrap it in an {{code "<a>"}} element with the {{code "pure-menu-heading"}} class name.
+        메뉴에 제목을 추가하려면 <code>&lt;ul&gt;</code> 엘리먼트 밖에 내용을 적고 <code>pure-menu-heading</code> 클래스이름이 있는 <code>&lt;a&gt;</code> 엘리먼트로 감싸면 된다.
     </p>
 
     {{> menus/heading}}
@@ -40,8 +40,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Vertical Menu</h2>
+    <h2 class="content-subhead">수직 메뉴</h2>
     <p>
+        메뉴는 기본적으로 수직이다. 메뉴에 스타일을 넣으려면 <code>pure-menu</code> 클래스만 추가하면 되고, 눈에 띄게 하려면 <code>pure-menu-open</code> 클래스를 해당 엘리먼트에 추가한다.
         Menus are vertical by default. You need only add the {{code "pure-menu"}} class to style the menu, and the {{code "pure-menu-open"}} class to ensure that it is visible.
     </p>
 
@@ -52,9 +53,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Add Dropdowns to Menus</h2>
+    <h2 class="content-subhead">메뉴에 드랍다운 추가하기</h2>
     <p>
-        Adding dropdowns to menus requires the use of JavaScript. For example, YUI's {{code "Y.Menu"}} module adds dropdown functionality and the ability to create JavaScript menus.
+        다릅다운 메뉴를 추가하려면 자바스크립트를 사용해야한다. 예를 들어, YUI의 <code>Y.Menu</code> 모듈로 자바스크립트 메뉴 기능을 넣고 드랍다운 기능을 추가할 수 있다.
     </p>
 
     {{> menus/dropdown}}
@@ -64,9 +65,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Menus with Disabled Items</h2>
+    <h2 class="content-subhead">비활성화된 항목 설정하기</h2>
     <p>
-        To mark a link as disabled, add an {{code "<a>"}} element with the {{code "pure-menu-disabled"}} class name. Disabled items appear faded and do not inherit hover styles.
+        링크를 비활성화로 표시하려면, <code>&lt;a&gt;</code> 엘리먼트에 <code>pure-menu-disabled</code>를 추가하면 된다. 비활성화된 항목은 희미하게 보이며 <abbr title="hover">호버</abbr> 스타일을 상속받지 않는다.
     </p>
 
     {{> menus/disabled}}
@@ -76,9 +77,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Paginators</h2>
+    <h2 class="content-subhead">페이지 표기</h2>
     <p>
-        To create a paginator control, add the {{code "pure-paginator"}} classname to a {{code "<ul>"}} element. For paginator controls that look like buttons, add the {{code "pure-button"}} class name. For a plainer paginator, you can omit this class.
+        페이지 표기를 만들려면, <code>&lt;ul&gt;</code> 엘리먼트에 <code>pure-paginator</code> 클래스이름을 추가하면 된다. 페이지 표기를 버튼처럼 보이고 싶으면 <code>pure-button</code> 클래스이름을 추가한다. 평범하게 사용하려면 클래스이름을 생략해도 된다.
     </p>
 
     {{> menus/paginator}}

@@ -1,14 +1,14 @@
-{{setTitle     "Tables"}}
-{{setSubTitle  "Simple CSS for HTML Tables"}}
+{{setTitle     "테이블"}}
+{{setSubTitle  "HTML 테이블을 위한 간단한 CSS"}}
 {{setActiveNav "tables"}}
 
 {{> header}}
 
 <div class="content">
 
-    <h2 class="content-subhead">Default Table</h2>
+    <h2 class="content-subhead">기본 테이블</h2>
     <p>
-        To style an HTML table, add the {{code "pure-table"}} classname. This class adds padding and borders to table elements, and emphasizes the header.
+        HTML 테이블에 스타일을 넣으려면, <code>pure-table</code> 클래스이름을 추가하면 된다. 이 클래스는 테이블 엘리먼트의 <abbr title="padding">패딩</abbr>과 <abbr title="border">보더</abbr>를 추가하고 헤더를 강조한다.
     </p>
 
     {{> tables/default}}
@@ -18,9 +18,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Bordered Table</h2>
+    <h2 class="content-subhead">보더 설정</h2>
     <p>
-        To add horizontal and vertical borders to all cells, add the {{code "pure-table-bordered"}} classname to the {{code "<table>"}} element.
+        모든 셀에 수평과 수직 보더를 넣으려면, <code>&lt;table&gt;</code> 엘리먼트에 <code>pure-table-bordered</code> 클래스이름을 추가하면 된다.
     </p>
 
     {{> tables/bordered}}
@@ -30,9 +30,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Table with Horizontal Borders</h2>
+    <h2 class="content-subhead">수평 보더</h2>
     <p>
-        If you prefer horizontal lines only, add the {{code "pure-table-horizontal"}} classname to the {{code "<table>"}} element.
+        수평선만 넣고 싶다면, <code>&lt;table&gt;</code> 엘리먼트에 <code>pure-table-horizontal</code> 클래스이름을 추가하면 된다.
     </p>
 
     {{> tables/horizontal}}
@@ -42,9 +42,12 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Striped Table</h2>
+    <h2 class="content-subhead"><abbr title="striped">줄무늬</abbr> 테이블</h2>
     <p>
-        Large tables are easier to parse visually if rows are easily distinguishable. Adding the {{code "pure-table-odd"}} class name to every other {{code "<tr>"}} element changes the background of the row and creates a zebra-styled effect.
+        큰 테이블에서 행들이 구분되면 보기에 더 편해진다. <code>pure-table-odd</code> 클래스이름을 해당하는 모든 <code>&lt;tr&gt;</code> 엘리먼트에 넣으면 행의 배경에 얼룩말같은 효과가 난다.
+    </p>
+    <p>
+        <b>참고:</b> CSS3의 <a href="http://caniuse.com/#search=nth-child"><code>nth-child</code> 수도 선택자</a>를 지원하는 브라우져라면 더 간단하게 사용할 수 있다. <code>pure-table-striped</code> 클래스 이름을 <code>&lt;table&gt;</code> 엘리먼트에 추가하면 자동으로 얼룩말 효과가 난다. 이 방법은 인터넷 익스플로러 8 이하에서는 작동하지 <em>않는다</em>.
     </p>
 
     {{> tables/striped}}

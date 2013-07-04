@@ -1,5 +1,5 @@
-{{setTitle     "Extend"}}
-{{setSubTitle  "Build on top of Pure"}}
+{{setTitle     "확장하기"}}
+{{setSubTitle  "Pure의 상위에 만든다"}}
 {{setActiveNav "extend"}}
 
 {{addLocalCSS "/css/bootstrap/modal.css"}}
@@ -9,35 +9,36 @@
 <div class="content">
 
     <p>
-        One of our goals when developing Pure was to make it extremely extensible. By including Pure and writing some CSS on top of it, you can ensure that your site or app works in across browsers, while looking truly unique. Best of all, your CSS file size will remain tiny, which is a great thing for mobile users and others with slow connections.
+        Pure를 개발하던 때의 목표 중 하나는 아주아주 확장가능하게 만드는 것이었다. Pure를 추가하고 위에 CSS를 조금 쓰기만 하면, 브라우져를 통해 앱이나 사이트가 아주 개성있게 보일 수 있다. 제일 좋은 점은, 모바일 사용자나 느린 네트워크의 사용자들에게 유용하게도 CSS 파일 크기가 아주 작다는 것이다.
     </p>
 
     <aside>
         <p>
-            Want a quick start? Take a look at some <a href="{{pages.layouts}}">layouts</a> that we've built on top of Pure.
+            빨리 써보고 싶은가? 여기 우리가 Pure 기반으로 만든 몇가지 <a href="{{pages.layouts}}">레이아웃</a>들이 있다.
         </p>
     </aside>
 
 
-    <h2 class="content-subhead">Style Guide</h2>
+    <h2 class="content-subhead">스타일 가이드</h2>
 
-    <h3>Based on SMACSS</h3>
+    <h3>SMACSS 기반</h3>
     <p>
-        Pure is broken up into a set of responsive modules. From the beginning, we adopted <a href="http://smacss.com/">SMACSS</a> as a convention for writing our CSS. For those who are new to SMACSS, you should give it a quick read, especially the section on <a href="http://smacss.com/book/type-module">module rules</a>.
+        Pure는 반응형 모듈들로 나누어져있다. 처음부터 우리는 CSS를 작성하는데 컨벤션으로 <a href="http://smacss.com/">SMACSS</a>를 적용했다.
+        SMACSS에 처음이라면, 특히 <a href="http://smacss.com/book/type-module">모듈 규칙</a> 부분을 읽어보면 좋다.
     </p>
 
-    <h3>Class Name Conventions</h3>
+    <h3>클래스이름 컨벤션</h3>
     <p>
-        One of the conventions in Pure is for every module to have a standard class name for common rules across a module, and then have additional class names for specific presentational rules for a specific sub-module. All classes start with a {{code "pure-"}} prefix to prevent collisions. In addition, we try not to have presentational class names. Instead of calling something {{code "pure-form-horizontal"}}, we prefer to call it {{code "pure-form-aligned"}}. This prevents a tight coupling between class names and styles, which is good for maintainability.
+        Pure의 컨벤션 중 하나는 모든 모듈이 모듈에 따라 공통된 기본 클래스이름을 가져야하고, 특정 하위모듈에서 특정 표현 규칙을 클래스이름을 붙인다. 모든 클래스들은 충돌을 피하기 위해 접두사인 <code>pure-</code>로 시작한다. 우리는 표현에 대한 클래스이름을 쓰지 않으려고 한ㄷ. 뭔가를 <code>pure-form-horizontal</code>이라 부르는 대신에 <code>pure-form-aligned</code>라고 부르려고 한다. 클래스이름과 스타일이 너무 강하게 엮이면 유지보수에 좋지 않다.
     </p>
 
     <p>
-        For example, let's consider the HTML and CSS for a <a href="{{pages.forms}}">Stacked Form</a>:
+        예를 들어보자면, <a href="{{pages.forms}}">쌓인 폼</a>의 HTML과 CSS를 보자:
     </p>
 
     <h4>Stacked Form: HTML</h4>
     <p>
-        A stacked form is created by adding two class names, {{code "pure-form"}} and {{code "pure-form-stacked"}}.
+        쌓인 폼은 두개의 클래스이름이 추가되는데, <code>pure-form</code>과 <code>pure-form-stacked</code>이다.
     </p>
 
 {{#code}}
@@ -46,31 +47,27 @@
 </form>
 {{/code}}
 
-    <h4>Stacked Form: CSS</h4>
+    <h4>쌓인 폼: CSS</h4>
     <p>
-        The two class names serve different purposes. One is used as a general selector to group common rules for all forms, while the other defines specific rules for a stacked form.
+        두개의 클래스이름은 다른 목적으로 쓰인다. 하나는 모든 폼에 대한 공통 규칙을 적용하기 위해 쓰이고, 다른 하나는 쌓인 폼을 위한 특정 규칙을 정의하기 위해 쓰인다.
     </p>
 
 {{#code "css"}}
 /*
-Standard rules that all Pure Forms have. This includes rules for
-styling .pure-form <inputs>, <fieldsets>, and <legends>, as well as layout
-rules such as vertical alignments.
+모든 Pure 폼이 갖는 기본 규칙. .pure-form <inputs>, <fieldsets>, 그리고 <legends>에 대한 스타일 규칙도 포함되고, 수직 정렬같은 레이아웃 규칙도 포함된다.
 */
 .pure-form { ... }
 
 /*
-Specific rules that apply to stacked forms. This includes rules
-such as taking child <input> elements and making them display: block
-for the stacked effect.
+쌓인 폼을 적용하기 위한 특정 규칙. 쌓인 효과를 주기 위해 하위의 <input> 엘리먼트들을 display: block으로 만드는 규칙이 포함된다.
 */
 .pure-form-stacked  { ... }
 {{/code}}
 
 
-    <h2 class="content-subhead">Extending Pure</h2>
+    <h2 class="content-subhead">Pure 확장하기</h2>
     <p>
-        When you're extending Pure, we recommend that you follow this convention. For instance, if you wanted to create a new type of form, your HTML and CSS should look something like this:
+        Pure를 확장할 때, 이런 컨벤션을 추천한다.  예를 들어, 새로운 타입의 폼을 만들고 싶으면 이렇게 HTML과 CSS를 작성하면 좋다:
     </p>
 
 {{#code}}
@@ -80,66 +77,66 @@ for the stacked effect.
 {{/code}}
 
 {{#code "css"}}
-/* add your custom styles in this selector */
+/* 선택자에 대한 커스텀 스타일을 추가 */
 .pure-form-custom { ... }
 {{/code}}
 
     <p>
-        One common task that you may wish to do is to style buttons so they look different. The <a href="{{pages.buttons}}">Pure Button Documentation</a> has some examples on how you can create buttons with custom sizes and styles by adopting this modular architecture.
+        대부분이 하려는 공통적인 한가지는 버튼을 좀 다르게 보이려고 스타일하는 일이다. <a href="{{pages.buttons}}">Pure 버튼 문서</a>에 모듈 구조를 적용해서 사이즈와 스타일을 수정해 버튼을 어떻게 만들지에 대한 몇가지 예제가 있다.
     </p>
 
-    <h2 class="content-subhead">Using the Skin Builder</h2>
+    <h2 class="content-subhead">Skin Builder 사용하기</h2>
 
     <p>
-        The <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a> is a great way to customize the look and feel of Pure without writing any CSS. Just select a single color, and watch Skin Builder work its magic to skin all of Pure's components. You can copy and paste the generated CSS into a stylesheet and get started quickly.
+        <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a>는 CSS를 작성하지 않고 룩앤필을 커스텀하기 위한 좋은 방법이다. 그냥 색깔 하나 선택하고 Skin Builder를 보면 Pure의 모든 컴포넌트에 스킨을 입히는 마법을 보여준다. 생성된 CSS를 스타일시트에 복사 붙여넣기로 빠르게 사용할 수 있다.
     </p>
 
     <p>
-        <a class="pure-button" href="http://yui.github.io/skinbuilder/?mode=pure">Launch Skin Builder</a>
+        <a class="pure-button" href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder 실행하기</a>
     </p>
 
 
-    <h2 class="content-subhead">Built on Pure</h2>
+    <h2 class="content-subhead">Pure 기반으로 작성</h2>
 
     <p>
-        The following third-party modules are built on Pure.
+        아래의 서드파티 모듈들은 Pure 기반으로 작성되었다.
     </p>
 
     <dl>
         <dt><a href="http://tilomitra.github.io/csstypography/">Typography</a></dt>
-        <dd>Simple styling for web typography</dd>
+        <dd>웹 타이포그라피를 위한 간단한 스타일링</dd>
 
-        <dt><a href="http://tilomitra.github.io/cssextras/">Extras</a></dt>
-        <dd>Simple styling for images, thumbnails, badges, contextual menus and alerts</dd>
+        <dt><a href="http://tilomitra.github.io/cssextras/">그 외</a></dt>
+        <dd>이미지, 섬네일, 뱃지, 문단 메뉴, 그리고 알림의 간단한 스타일링</dd>
     </dl>
 
 
     <h2 class="content-subhead">Pure + Bootstrap + JavaScript</h2>
 
     <p>
-        Pure plays well with other libraries, including Bootstrap and jQuery. As a developer, you can pull in Pure as a foundational CSS framework, and then include specific Bootstrap or jQuery modules that your application may require. There are several benefits to doing this:
+        Pure는 Bootstrap이나 jQuery를 포함한 다른 라이브러리들과 같이 잘 작동한다. 개발자라면 Pure를 기본 CSS 프레임워크로 사용하면서, bootstrap이나 jQuery같은 필요한 특정 모듈을 포함해 사용할 수도 있다. 이렇게 쓰면 몇가지 장점들이 있다:
     </p>
 
     <ul>
         <li>
             <p>
-                Your website or webapp's CSS will be a lot smaller &mdash; up to <em>5X smaller</em> in some cases!
+                웹사이트나 웹앱의 CSS가 엄청나게 줄어든다 &mdash; 어떤 경우에서는 최대 <em>5배 축소</em>!
             </p>
         </li>
         <li>
             <p>
-                You get Pure's minimalist look that's easy to build on top of. No need to overwrite styles!
+                맨 위에 추가만 하면 Pure의 가장 미니멀한 스타일을 적용할 수 있다. 어떤 스타일도 다시 다시 작성할 필요가 없다!
             </p>
         </li>
         <li>
             <p>
-                You can take advantage of Bootstrap's ecosystem without pulling in a monolithic Bootstrap CSS file.
+                Bootstrap CSS를 하나만 쓸 때처럼 그 생태계의 장점을 얻을 수 있다.
             </p>
         </li>
     </ul>
 
     <p>
-        For example, here's a Bootstrap Modal. It's created by including the Pure CSS Rollup, and just adding Bootstrap's <a href="/css/bootstrap/modal.css">{{code "modal.css"}}</a> along with the jQuery plugin.
+        예를 들어, 여기 Bootstrap Modal이 있다. Pure CSS 묶음을 포함해 만들었고, 단지  Bootstrap의 <a href="/css/bootstrap/modal.css"><code>modal.css</code></a>와 jQuery 플러그인만 추가했을 뿐이다.
     </p>
 
     {{> extend/modal}}

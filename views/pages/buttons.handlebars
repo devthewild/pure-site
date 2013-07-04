@@ -1,5 +1,5 @@
-{{setTitle     "Buttons"}}
-{{setSubTitle  "Simple CSS for Buttons"}}
+{{setTitle     "버튼"}}
+{{setSubTitle  "버튼을 위한 간단한 CSS"}}
 {{setActiveNav "buttons"}}
 
 {{addRemoteCSS "http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"}}
@@ -9,9 +9,9 @@
 
 <div class="content">
 
-    <h2 class="content-subhead">Default Buttons</h2>
+    <h2 class="content-subhead">기본 버튼</h2>
     <p>
-        To create a Pure Button, add the {{code "pure-button"}} classname to any {{code "<a>"}} or {{code "<button>"}} element.
+        Pure 버튼을 만들려면, 아무 <code>&lt;a&gt;</code>나 <code>&lt;button&gt;</code> 엘리먼트에 <code>pure-button</code> 클래스이름을 추가한다.
     </p>
 
   {{#prefixIds "default"}}
@@ -23,8 +23,9 @@
     {{> buttons/default}}
   {{/code}}
 
-    <h2 class="content-subhead">Disabled Buttons</h2>
+    <h2 class="content-subhead">비활성화된 버튼</h2>
     <p>
+        버튼을 비활성화로 나타내려면, <code>pure-button</code> 클래스이름 옆에 <code>pure-button-disabled</code>를 추가한다.
         To mark a button as disabled, add the {{code "pure-button-disabled"}} classname alongside {{code "pure-button"}}.
     </p>
 
@@ -36,8 +37,9 @@
     {{> buttons/disabled}}
   {{/code}}
 
-    <h2 class="content-subhead">Active Buttons</h2>
+    <h2 class="content-subhead">활성화된 버튼</h2>
     <p>
+        "눌렸음"을 버튼에 나타내려면, <code>pure-button</code> 클래스이름 옆에 <code>pure-button-active</code>를 추가한다.
         To style a button so that it appears "pressed", add the {{code "pure-button-active"}} classname alongside {{code "pure-button"}}.
     </p>
 
@@ -49,9 +51,9 @@
     {{> buttons/active}}
   {{/code}}
 
-    <h2 class="content-subhead">Primary Buttons</h2>
+    <h2 class="content-subhead"><abbr title="primary">우선순위</abbr> 버튼</h2>
     <p>
-        To indicate that a button represents a primary action, add the {{code "pure-button-primary"}} classname alongside {{code "pure-button"}}.
+        버튼을 1순위로 나타내고 싶으면, <code>pure-button</code> 클래스이름 옆에 <code>pure-button-primary</code>를 추가한다.
     </p>
 
   {{#prefixIds "primary"}}
@@ -64,16 +66,16 @@
 
 
 
-    <h2 class="content-subhead">Customizing Buttons</h2>
+    <h2 class="content-subhead">버튼 커스텀하기</h2>
     <p>
-        Thanks to Pure's minimal styling, it is easy to build off of the generic Pure button and create customized buttons for your own application.
+        Pure의 최소화된 스타일 덕분에, 기존 Pure 버튼에서 만들기도 쉽고 어플리케이션에 맞게 커스텀하기도 쉽다.
     </p>
 
     <p>
-        To customize button styles, you should group your custom CSS into a class such as {{code "pure-button-foo"}}, which you can then append to an element that already has the {{code "pure-button"}} classname. Here are some examples.
+        버튼 스타일을 커스텀하려면, <code>pure-button</code> 클래스이름을 갖는 엘리먼트에 <code>pure-button-foo</code>처럼 수정된 CSS를 묶은 클래스를 추가하면 된다. 예시를 보자.
     </p>
 
-    <h3 class="content-subhead">Colored buttons with rounded corners</h3>
+    <h3 class="content-subhead">둥근 모서리의 색깔 버튼들</h3>
 
   {{#prefixIds "primary"}}
     {{> buttons/colors}}
@@ -84,7 +86,7 @@
   {{/code}}
 
 
-    <h3 class="content-subhead">Buttons with different sizes</h3>
+    <h3 class="content-subhead">다른 크기들의 버튼들</h3>
 
   {{#prefixIds "primary"}}
     {{> buttons/sizes}}
@@ -95,9 +97,9 @@
   {{/code}}
 
 
-    <h3 class="content-subhead">Buttons with icons</h3>
+    <h3 class="content-subhead">아이콘을 넣은 버튼</h3>
     <p>
-        Pure doesn't ship with icon fonts, but we play nice with existing ones. Incorporating icon fonts with Pure Buttons is easy. In the example below, we're using icon fonts from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Put the <a href="http://fortawesome.github.io/Font-Awesome/get-started/">Font Awesome CSS file</a> on your page and use an {{code "<i>"}} element within a {{code "pure-button"}} element.
+        Pure에는 아이콘 폰트가 포함되어있지 않지만, 다른 것들을 가져다쓰기에는 좋다. 아이콘 폰트들을 Pure 버튼에 넣는건 매우 쉽다. 아래 예시에서는 <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> 아이콘폰트를 쓰고 있다. <a href="http://fortawesome.github.io/Font-Awesome/get-started/">Font Awesome CSS file</a>를 페이지에 넣고, <code>pure-button</code> 엘리먼트 안에 <code>&lt;i&gt;</code> 엘리먼트를 사용하면 된다.
     </p>
 
   {{#prefixIds "primary"}}

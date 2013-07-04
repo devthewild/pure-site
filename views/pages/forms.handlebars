@@ -1,14 +1,14 @@
-{{setTitle     "Forms"}}
-{{setSubTitle  "Simple CSS for HTML Forms"}}
+{{setTitle     "폼"}}
+{{setSubTitle  "HTML Forms을 위한 간단한 CSS"}}
 {{setActiveNav "forms"}}
 
 {{> header}}
 
 <div class="content">
 
-    <h2 class="content-subhead">Default Form</h2>
+    <h2 class="content-subhead">기본 <abbr title="Form">폼</abbr></h2>
     <p>
-        To create a default inline form, add the {{code "pure-form"}} classname to any {{code "<form>"}} element.
+        기본 <abbr title="inline form">인라인 폼</abbr>을 만들려면 아무 <code>&lt;form&gt;</code> 엘리먼트에 <code>pure-form</code> 클래스이름을 넣으면 된다.
     </p>
 
   {{#prefixIds "default"}}
@@ -20,9 +20,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead" id="stacked-form">Stacked Form</h2>
+    <h2 class="content-subhead" id="stacked-form">쌓인 폼</h2>
     <p>
-        To create a stacked form with input elements below the labels, add the {{code "pure-form-stacked"}} classname to a {{code "<form>"}} element alongside {{code "pure-form"}}.
+        <abbr title="label">레이블</abbr>아래 인풋 엘리먼트들이 쌓이는 폼을 만들려면, <code>&lt;form&gt;</code> 엘리먼트의 클래스이름 <code>pure-form</code> 옆에 <code>pure-form-stacked</code>를 추가한다.
     </p>
 
   {{#prefixIds "stacked"}}
@@ -34,9 +34,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Aligned Form</h2>
+    <h2 class="content-subhead">정렬된 폼</h2>
     <p>
-        To create an aligned form, add the {{code "pure-form-aligned"}} classname to a {{code "<form>"}} element alongside {{code "pure-form"}}. In an aligned form, the labels are right-aligned against the form input controls, but on smaller screens revert to a <a href="#stacked-form">stacked form</a>.
+        정렬된 폼을 만들려면 <code>&lt;form&gt;</code> 엘리먼트의 클래스이름 <code>pure-form</code> 옆에 <code>pure-form-aligned</code>를 추가한다. 정렬된 폼에서는 폼의 인풋들과 반대로 레이블들이 오른쪽 정렬이지만, 작은 스크린에서는 <a href="#stacked-form">쌓인 폼</a>으로 전환된다.
     </p>
 
   {{#prefixIds "aligned"}}
@@ -47,9 +47,9 @@
     {{> forms/aligned}}
   {{/code}}
 
-    <h2 class="content-subhead">Multi-Column Form (with Pure Grids)</h2>
+    <h2 class="content-subhead">(Pure 그리드를 쓰는) <abbr title="어떻게 번역해야할지 모르는">멀티컬럼</abbr> 폼</h2>
     <p>
-        To create multi-column forms, include your form elements within a <a href="{{pages.grids}}">Pure Grid</a>. The following example uses Pure Grids with a stacked form.
+        멀티컬럼 폼을 만들려면, 폼 엘리먼트 안에 <a href="{{pages.grids}}">Pure 그리드</a>를 넣어라. 쌓인 폼과 Pure 그리드를 이용한 예제는 다음과 같다.
     </p>
 
   {{#prefixIds "multi"}}
@@ -60,9 +60,9 @@
     {{> forms/multi}}
   {{/code}}
 
-    <h2 class="content-subhead">Grouped Inputs</h2>
+    <h2 class="content-subhead">인풋 묶음</h2>
     <p>
-        To group sets of text-based input elements, wrap them in a {{code "<fieldset>"}} element with a {{code "pure-group"}} classname. Grouped inputs work well for sign-up forms and look natural on mobile devices.
+        텍스트 기반의 인풋들을 묶기 위해서 <code>pure-group</code> 클래스 이름을 가진 <code>&lt;fieldset&gt;</code> 엘리먼트로 묶으면 된다. 인풋 묶음은 회원가입 폼에서 유용하며 모바일 기기에서도 자연스럽게 보인다.
     </p>
 
   {{#prefixIds "grouped"}}
@@ -74,9 +74,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Input Sizing</h2>
+    <h2 class="content-subhead">인풋 크기</h2>
     <p>
-        Input elements have fluid width sizes in a syntax that is similar to <a href="{{pages.home}}">Pure Grids</a>. You can apply a {{code "pure-input-*"}} class to these elements.
+        인풋 엘리먼트들은 <a href="{{pages.home}}">Pure 그리드</a>와 비슷한 방법으로 유연한 너비 크기를 갖는다. 엘리먼트에 <code>"pure-input-*"</code> 클래스를 추가해서 적용할 수 있다.
     </p>
 
   {{#prefixIds "input-size"}}
@@ -88,7 +88,7 @@
   {{/code}}
 
     <p>
-        You can control input sizing even further by wrapping them in grid containers. In the example below, the {{code "<input>"}} elements have a {{code "pure-input-1"}} class, but are wrapped in a {{code "<div>"}} with a specific grid class.
+        그리드 컨테이너로 묶어서 인풋 크기를 조절할 수도 있다. 아래 예시에서는 <code>&lt;input&gt;</code> 엘리먼트들이 <code>pure-input-1</code> 클래스지만 특정 그리드 클래스를 가진 <code>&lt;div&gt;</code>로 묶여있다.
     </p>
 
   {{#prefixIds "input-grid"}}
@@ -100,9 +100,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Required Inputs</h2>
+    <h2 class="content-subhead">필수 인풋</h2>
     <p>
-        To mark a form control as required, add the {{code "required"}} attribute.
+        폼에서 필수 항목을 나타내기 위해서 <code>required</code> 속성을 추가한다.
     </p>
 
   {{#prefixIds "invalid"}}
@@ -114,9 +114,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Disabled Inputs</h2>
+    <h2 class="content-subhead">비활성화된 인풋</h2>
     <p>
-        To disable a form control, add the {{code "disabled"}} attribute.
+        폼 항목을 비활성화하기 위해서는 <code>disabled</code> 속성을 추가한다.
     </p>
 
   {{#prefixIds "disabled"}}
@@ -128,9 +128,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Rounded Inputs</h2>
+    <h2 class="content-subhead">둥근 인풋</h2>
     <p>
-        To display a form control with rounded corners, add the {{code "pure-input-rounded"}} classname.
+        폼 항목의 모서리를 둥글게 보이려면, <code>pure-input-rounded</code> 클래스이름을 추가한다.
     </p>
 
   {{#prefixIds "rounded"}}
@@ -142,9 +142,9 @@
   {{/code}}
 
 
-    <h2 class="content-subhead">Checkboxes and Radios</h2>
+    <h2 class="content-subhead"><abbr title="checkbox">체크박스</abbr>와 <abbr title="radio">라디오</abbr></h2>
     <p>
-        To normalize and align checkboxes and radio inputs, add the {{code "pure-checkbox"}} or {{code "pure-radio"}} classname.
+        체크박스와 라디오 인풋들을 깔끔하게 정렬하고 싶으면, <code>pure-checkbox</code> 혹은 <code>pure-radio</code> 클래스이름을 추가한다.
     </p>
 
   {{#prefixIds "checkbox-radio"}}

@@ -102,7 +102,7 @@ function routePage(id, path, label, callbacks) {
 }
 
 routePage('home',      '/',                        routes.render('home'));
-routePage('base',      '/base/',      '기초',      routes.render('base'));
+routePage('base',      '/base/',      '기본',      routes.render('base'));
 routePage('grids',     '/grids/',     '그리드',     routes.render('grids'));
 routePage('forms',     '/forms/',     '폼',     routes.render('forms'));
 routePage('buttons',   '/buttons/',   '버튼',   routes.render('buttons'));
