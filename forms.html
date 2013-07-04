@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Forms - Pure</title>
+    <title>폼 - Pure</title>
 
 
     
@@ -55,7 +55,7 @@
         <ul>
           
             <li class=" ">
-                <a href="/pure-site/base.html">기초</a>
+                <a href="/pure-site/base.html">기본</a>
             </li>
           
             <li class=" ">
@@ -114,34 +114,34 @@
 
 
 <div class="header pure-u-1">
-    <h1 class="pure-u-1">Forms</h1>
+    <h1 class="pure-u-1">폼</h1>
 
   
-    <h2 class="pure-u">Simple CSS for HTML Forms</h2>
+    <h2 class="pure-u">HTML Forms을 위한 간단한 CSS</h2>
   
 </div>
 
 
 <div class="content">
 
-    <h2 class="content-subhead">Default Form</h2>
+    <h2 class="content-subhead">기본 <abbr title="Form">폼</abbr></h2>
     <p>
-        To create a default inline form, add the &lt;code&gt;pure-form&lt;/code&gt; classname to any &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element.
+        기본 <abbr title="inline form">인라인 폼</abbr>을 만들려면 아무 <code>&lt;form&gt;</code> 엘리먼트에 <code>pure-form</code> 클래스이름을 넣으면 된다.
     </p>
 
   
     <form class="pure-form">
     <fieldset>
-        <legend>A compact inline form</legend>
+        <legend>단순한 인라인 폼</legend>
 
         <input type="email" placeholder="Email">
         <input type="password" placeholder="Password">
 
         <label for="default-remember">
-            <input id="default-remember" type="checkbox"> Remember me
+            <input id="default-remember" type="checkbox"> 기억하기
         </label>
 
-        <button type="submit" class="pure-button notice">Sign in</button>
+        <button type="submit" class="pure-button notice">로그인</button>
     </fieldset>
 </form>
 
@@ -149,29 +149,29 @@
 
   <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
     &lt;fieldset&gt;
-        &lt;legend&gt;A compact inline form&lt;/legend&gt;
+        &lt;legend&gt;단순한 인라인 폼&lt;/legend&gt;
 
         &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
         &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
 
         &lt;label for=&quot;remember&quot;&gt;
-            &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; Remember me
+            &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; 기억하기
         &lt;/label&gt;
 
-        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;Sign in&lt;/button&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;로그인&lt;/button&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
 
 
-    <h2 class="content-subhead" id="stacked-form">Stacked Form</h2>
+    <h2 class="content-subhead" id="stacked-form">쌓인 폼</h2>
     <p>
-        To create a stacked form with input elements below the labels, add the &lt;code&gt;pure-form-stacked&lt;/code&gt; classname to a &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element alongside &lt;code&gt;pure-form&lt;/code&gt;.
+        <abbr title="label">레이블</abbr>아래 인풋 엘리먼트들이 쌓이는 폼을 만들려면, <code>&lt;form&gt;</code> 엘리먼트의 클래스이름 <code>pure-form</code> 옆에 <code>pure-form-stacked</code>를 추가한다.
     </p>
 
   
     <form class="pure-form pure-form-stacked">
     <fieldset>
-        <legend>A Stacked Form</legend>
+        <legend>쌓인 폼</legend>
 
         <label for="stacked-email">Email</label>
         <input id="stacked-email" type="email" placeholder="Email">
@@ -179,18 +179,18 @@
         <label for="stacked-password">Password</label>
         <input id="stacked-password" type="password" placeholder="Password">
 
-        <label for="stacked-state">State</label>
+        <label for="stacked-state">주소</label>
         <select id="stacked-state">
-            <option>AL</option>
-            <option>CA</option>
-            <option>IL</option>
+            <option>서울</option>
+            <option>경기도</option>
+            <option>인천</option>
         </select>
 
         <label for="stacked-remember" class="pure-checkbox">
-            <input id="stacked-remember" type="checkbox"> Remember me
+            <input id="stacked-remember" type="checkbox"> 기억하기
         </label>
 
-        <button type="submit" class="pure-button notice">Sign in</button>
+        <button type="submit" class="pure-button notice">로그인</button>
     </fieldset>
 </form>
 
@@ -198,7 +198,7 @@
 
   <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form pure-form-stacked&quot;&gt;
     &lt;fieldset&gt;
-        &lt;legend&gt;A Stacked Form&lt;/legend&gt;
+        &lt;legend&gt;쌓인 폼&lt;/legend&gt;
 
         &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
         &lt;input id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
@@ -206,56 +206,56 @@
         &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
         &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
 
-        &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+        &lt;label for=&quot;state&quot;&gt;주소&lt;/label&gt;
         &lt;select id=&quot;state&quot;&gt;
-            &lt;option&gt;AL&lt;/option&gt;
-            &lt;option&gt;CA&lt;/option&gt;
-            &lt;option&gt;IL&lt;/option&gt;
+            &lt;option&gt;서울&lt;/option&gt;
+            &lt;option&gt;경기도&lt;/option&gt;
+            &lt;option&gt;인천&lt;/option&gt;
         &lt;/select&gt;
 
         &lt;label for=&quot;remember&quot; class=&quot;pure-checkbox&quot;&gt;
-            &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; Remember me
+            &lt;input id=&quot;remember&quot; type=&quot;checkbox&quot;&gt; 기억하기
         &lt;/label&gt;
 
-        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;Sign in&lt;/button&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;로그인&lt;/button&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
 
 
-    <h2 class="content-subhead">Aligned Form</h2>
+    <h2 class="content-subhead">정렬된 폼</h2>
     <p>
-        To create an aligned form, add the &lt;code&gt;pure-form-aligned&lt;/code&gt; classname to a &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element alongside &lt;code&gt;pure-form&lt;/code&gt;. In an aligned form, the labels are right-aligned against the form input controls, but on smaller screens revert to a <a href="#stacked-form">stacked form</a>.
+        정렬된 폼을 만들려면 <code>&lt;form&gt;</code> 엘리먼트의 클래스이름 <code>pure-form</code> 옆에 <code>pure-form-aligned</code>를 추가한다. 정렬된 폼에서는 폼의 인풋들과 반대로 레이블들이 오른쪽 정렬이지만, 작은 스크린에서는 <a href="#stacked-form">쌓인 폼</a>으로 전환된다.
     </p>
 
   
     <form class="pure-form pure-form-aligned">
     <fieldset>
         <div class="pure-control-group">
-            <label for="aligned-name">Username</label>
+            <label for="aligned-name">이름</label>
             <input id="aligned-name" type="text" placeholder="Username">
         </div>
 
         <div class="pure-control-group">
-            <label for="aligned-password">Password</label>
+            <label for="aligned-password">패스워드</label>
             <input id="aligned-password" type="password" placeholder="Password">
         </div>
 
         <div class="pure-control-group">
-            <label for="aligned-email">Email Address</label>
+            <label for="aligned-email">Email 주소</label>
             <input id="aligned-email" type="email" placeholder="Email Address">
         </div>
 
         <div class="pure-control-group">
-            <label for="aligned-foo">Supercalifragilistic Label</label>
+            <label for="aligned-foo">쓸데없이이리저리늘여서확인해보는 레이블</label>
             <input id="aligned-foo" type="text" placeholder="Enter something here...">
         </div>
 
         <div class="pure-controls">
             <label for="aligned-cb" class="pure-checkbox">
-                <input id="aligned-cb" type="checkbox"> I've read the terms and conditions
+                <input id="aligned-cb" type="checkbox"> 약관과 조건을 읽었습니다.
             </label>
 
-            <button type="submit" class="pure-button">Submit</button>
+            <button type="submit" class="pure-button">가입</button>
         </div>
     </fieldset>
 </form>
@@ -265,53 +265,54 @@
   <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form pure-form-aligned&quot;&gt;
     &lt;fieldset&gt;
         &lt;div class=&quot;pure-control-group&quot;&gt;
-            &lt;label for=&quot;name&quot;&gt;Username&lt;/label&gt;
+            &lt;label for=&quot;name&quot;&gt;이름&lt;/label&gt;
             &lt;input id=&quot;name&quot; type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
         &lt;/div&gt;
 
         &lt;div class=&quot;pure-control-group&quot;&gt;
-            &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+            &lt;label for=&quot;password&quot;&gt;패스워드&lt;/label&gt;
             &lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
         &lt;/div&gt;
 
         &lt;div class=&quot;pure-control-group&quot;&gt;
-            &lt;label for=&quot;email&quot;&gt;Email Address&lt;/label&gt;
+            &lt;label for=&quot;email&quot;&gt;Email 주소&lt;/label&gt;
             &lt;input id=&quot;email&quot; type=&quot;email&quot; placeholder=&quot;Email Address&quot;&gt;
         &lt;/div&gt;
 
         &lt;div class=&quot;pure-control-group&quot;&gt;
-            &lt;label for=&quot;foo&quot;&gt;Supercalifragilistic Label&lt;/label&gt;
+            &lt;label for=&quot;foo&quot;&gt;쓸데없이이리저리늘여서확인해보는 레이블&lt;/label&gt;
             &lt;input id=&quot;foo&quot; type=&quot;text&quot; placeholder=&quot;Enter something here...&quot;&gt;
         &lt;/div&gt;
 
         &lt;div class=&quot;pure-controls&quot;&gt;
             &lt;label for=&quot;cb&quot; class=&quot;pure-checkbox&quot;&gt;
-                &lt;input id=&quot;cb&quot; type=&quot;checkbox&quot;&gt; I&#x27;ve read the terms and conditions
+                &lt;input id=&quot;cb&quot; type=&quot;checkbox&quot;&gt; 약관과 조건을 읽었습니다.
             &lt;/label&gt;
 
-            &lt;button type=&quot;submit&quot; class=&quot;pure-button&quot;&gt;Submit&lt;/button&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;pure-button&quot;&gt;가입&lt;/button&gt;
         &lt;/div&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
 
-    <h2 class="content-subhead">Multi-Column Form (with Pure Grids)</h2>
+    <h2 class="content-subhead">(Pure 그리드를 쓰는) <abbr title="어떻게 번역해야할지 모르는">멀티컬럼</abbr> 폼</h2>
     <p>
-        To create multi-column forms, include your form elements within a <a href="/pure-site/grids.html">Pure Grid</a>. The following example uses Pure Grids with a stacked form.
+        멀티컬럼 폼을 만들려면, 폼 엘리먼트 안에 <a href="/pure-site/grids.html">Pure 그리드</a>를 넣어라. 쌓인 폼과 Pure 그리드를 이용한 예제는 다음과 같다.
     </p>
 
   
     <form class="pure-form pure-form-stacked">
     <fieldset>
-        <legend>Legend</legend>
+        <legend>회원가입</legend>
+        <!-- 한국어화에 맞추기 위해 성-이름 순으로 변경 -->
 
         <div class="pure-g-r">
             <div class="pure-u-1-3">
-                <label for="multi-first-name">First Name</label>
+                <label for="multi-first-name">성</label>
                 <input id="multi-first-name" type="text">
             </div>
 
             <div class="pure-u-1-3">
-                <label for="multi-last-name">Last Name</label>
+                <label for="multi-last-name">이름</label>
                 <input id="multi-last-name" type="text">
             </div>
 
@@ -321,25 +322,25 @@
             </div>
 
             <div class="pure-u-1-3">
-                <label for="multi-city">City</label>
+                <label for="multi-city">도시</label>
                 <input id="multi-city" type="text">
             </div>
 
             <div class="pure-u-1-3">
-                <label for="multi-state">State</label>
+                <label for="multi-state">주소</label>
                 <select id="multi-state" class="pure-input-medium">
-                    <option>AL</option>
-                    <option>CA</option>
-                    <option>IL</option>
+                    <option>서울</option>
+                    <option>경기도</option>
+                    <option>인천</option>
                 </select>
             </div>
         </div>
 
         <label for="multi-terms" class="pure-checkbox">
-            <input id="multi-terms" type="checkbox"> I've read the terms and conditions
+            <input id="multi-terms" type="checkbox"> 약관과 조건을 읽었습니다.
         </label>
 
-        <button type="submit" class="pure-button notice">Submit</button>
+        <button type="submit" class="pure-button notice">가입</button>
     </fieldset>
 </form>
 
@@ -347,16 +348,17 @@
 
   <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form pure-form-stacked&quot;&gt;
     &lt;fieldset&gt;
-        &lt;legend&gt;Legend&lt;/legend&gt;
+        &lt;legend&gt;회원가입&lt;/legend&gt;
+        &lt;!-- 한국어화에 맞추기 위해 성-이름 순으로 변경 --&gt;
 
         &lt;div class=&quot;pure-g-r&quot;&gt;
             &lt;div class=&quot;pure-u-1-3&quot;&gt;
-                &lt;label for=&quot;first-name&quot;&gt;First Name&lt;/label&gt;
+                &lt;label for=&quot;first-name&quot;&gt;성&lt;/label&gt;
                 &lt;input id=&quot;first-name&quot; type=&quot;text&quot;&gt;
             &lt;/div&gt;
 
             &lt;div class=&quot;pure-u-1-3&quot;&gt;
-                &lt;label for=&quot;last-name&quot;&gt;Last Name&lt;/label&gt;
+                &lt;label for=&quot;last-name&quot;&gt;이름&lt;/label&gt;
                 &lt;input id=&quot;last-name&quot; type=&quot;text&quot;&gt;
             &lt;/div&gt;
 
@@ -366,31 +368,31 @@
             &lt;/div&gt;
 
             &lt;div class=&quot;pure-u-1-3&quot;&gt;
-                &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
+                &lt;label for=&quot;city&quot;&gt;도시&lt;/label&gt;
                 &lt;input id=&quot;city&quot; type=&quot;text&quot;&gt;
             &lt;/div&gt;
 
             &lt;div class=&quot;pure-u-1-3&quot;&gt;
-                &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;
+                &lt;label for=&quot;state&quot;&gt;주소&lt;/label&gt;
                 &lt;select id=&quot;state&quot; class=&quot;pure-input-medium&quot;&gt;
-                    &lt;option&gt;AL&lt;/option&gt;
-                    &lt;option&gt;CA&lt;/option&gt;
-                    &lt;option&gt;IL&lt;/option&gt;
+                    &lt;option&gt;서울&lt;/option&gt;
+                    &lt;option&gt;경기도&lt;/option&gt;
+                    &lt;option&gt;인천&lt;/option&gt;
                 &lt;/select&gt;
             &lt;/div&gt;
         &lt;/div&gt;
 
         &lt;label for=&quot;terms&quot; class=&quot;pure-checkbox&quot;&gt;
-            &lt;input id=&quot;terms&quot; type=&quot;checkbox&quot;&gt; I&#x27;ve read the terms and conditions
+            &lt;input id=&quot;terms&quot; type=&quot;checkbox&quot;&gt; 약관과 조건을 읽었습니다.
         &lt;/label&gt;
 
-        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;Submit&lt;/button&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;pure-button notice&quot;&gt;가입&lt;/button&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
 
-    <h2 class="content-subhead">Grouped Inputs</h2>
+    <h2 class="content-subhead">인풋 묶음</h2>
     <p>
-        To group sets of text-based input elements, wrap them in a &lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; element with a &lt;code&gt;pure-group&lt;/code&gt; classname. Grouped inputs work well for sign-up forms and look natural on mobile devices.
+        텍스트 기반의 인풋들을 묶기 위해서 <code>pure-group</code> 클래스 이름을 가진 <code>&lt;fieldset&gt;</code> 엘리먼트로 묶으면 된다. 인풋 묶음은 회원가입 폼에서 유용하며 모바일 기기에서도 자연스럽게 보인다.
     </p>
 
   
@@ -406,7 +408,7 @@
         <input type="text" class="pure-input-1-2" placeholder="More Stuff">
     </fieldset>
 
-    <button type="submit" class="pure-button pure-input-1-2 notice">Sign in</button>
+    <button type="submit" class="pure-button pure-input-1-2 notice">가입</button>
 </form>
 
   
@@ -423,13 +425,13 @@
         &lt;input type=&quot;text&quot; class=&quot;pure-input-1-2&quot; placeholder=&quot;More Stuff&quot;&gt;
     &lt;/fieldset&gt;
 
-    &lt;button type=&quot;submit&quot; class=&quot;pure-button pure-input-1-2 notice&quot;&gt;Sign in&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;pure-button pure-input-1-2 notice&quot;&gt;가입&lt;/button&gt;
 &lt;/form&gt;</code></pre>
 
 
-    <h2 class="content-subhead">Input Sizing</h2>
+    <h2 class="content-subhead">인풋 크기</h2>
     <p>
-        Input elements have fluid width sizes in a syntax that is similar to <a href="/pure-site/index.html">Pure Grids</a>. You can apply a &lt;code&gt;pure-input-*&lt;/code&gt; class to these elements.
+        인풋 엘리먼트들은 <a href="/pure-site/index.html">Pure 그리드</a>와 비슷한 방법으로 유연한 너비 크기를 갖는다. 엘리먼트에 <code>"pure-input-*"</code> 클래스를 추가해서 적용할 수 있다.
     </p>
 
   
@@ -452,7 +454,7 @@
  &lt;/form&gt;</code></pre>
 
     <p>
-        You can control input sizing even further by wrapping them in grid containers. In the example below, the &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; elements have a &lt;code&gt;pure-input-1&lt;/code&gt; class, but are wrapped in a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; with a specific grid class.
+        그리드 컨테이너로 묶어서 인풋 크기를 조절할 수도 있다. 아래 예시에서는 <code>&lt;input&gt;</code> 엘리먼트들이 <code>pure-input-1</code> 클래스지만 특정 그리드 클래스를 가진 <code>&lt;div&gt;</code>로 묶여있다.
     </p>
 
   
@@ -545,79 +547,79 @@
 &lt;/form&gt;</code></pre>
 
 
-    <h2 class="content-subhead">Required Inputs</h2>
+    <h2 class="content-subhead">필수 인풋</h2>
     <p>
-        To mark a form control as required, add the &lt;code&gt;required&lt;/code&gt; attribute.
+        폼에서 필수 항목을 나타내기 위해서 <code>required</code> 속성을 추가한다.
     </p>
 
   
     <form class="pure-form">
-    <input type="email" placeholder="Requires an email" required>
+    <input type="email" placeholder="email은 필수" required>
 </form>
 
   
 
   <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
-    &lt;input type=&quot;email&quot; placeholder=&quot;Requires an email&quot; required&gt;
+    &lt;input type=&quot;email&quot; placeholder=&quot;email은 필수&quot; required&gt;
 &lt;/form&gt;</code></pre>
 
 
-    <h2 class="content-subhead">Disabled Inputs</h2>
+    <h2 class="content-subhead">비활성화된 인풋</h2>
     <p>
-        To disable a form control, add the &lt;code&gt;disabled&lt;/code&gt; attribute.
+        폼 항목을 비활성화하기 위해서는 <code>disabled</code> 속성을 추가한다.
     </p>
 
   
     <form class="pure-form">
-    <input type="text" placeholder="Disabled input here..." disabled>
+    <input type="text" placeholder="이건 비활성화된 인풋..." disabled>
 </form>
 
   
 
   <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;이건 비활성화된 인풋...&quot; disabled&gt;
 &lt;/form&gt;</code></pre>
 
 
-    <h2 class="content-subhead">Rounded Inputs</h2>
+    <h2 class="content-subhead">둥근 인풋</h2>
     <p>
-        To display a form control with rounded corners, add the &lt;code&gt;pure-input-rounded&lt;/code&gt; classname.
+        폼 항목의 모서리를 둥글게 보이려면, <code>pure-input-rounded</code> 클래스이름을 추가한다.
     </p>
 
   
     <form class="pure-form">
     <input type="text" class="pure-input-rounded">
-    <button type="submit" class="pure-button">Search</button>
+    <button type="submit" class="pure-button">검색</button>
 </form>
 
   
 
   <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
     &lt;input type=&quot;text&quot; class=&quot;pure-input-rounded&quot;&gt;
-    &lt;button type=&quot;submit&quot; class=&quot;pure-button&quot;&gt;Search&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;pure-button&quot;&gt;검색&lt;/button&gt;
 &lt;/form&gt;</code></pre>
 
 
-    <h2 class="content-subhead">Checkboxes and Radios</h2>
+    <h2 class="content-subhead"><abbr title="checkbox">체크박스</abbr>와 <abbr title="radio">라디오</abbr></h2>
     <p>
-        To normalize and align checkboxes and radio inputs, add the &lt;code&gt;pure-checkbox&lt;/code&gt; or &lt;code&gt;pure-radio&lt;/code&gt; classname.
+        체크박스와 라디오 인풋들을 깔끔하게 정렬하고 싶으면, <code>pure-checkbox</code> 혹은 <code>pure-radio</code> 클래스이름을 추가한다.
     </p>
 
   
     <form class="pure-form">
     <label for="checkbox-radio-option-one" class="pure-checkbox">
         <input id="checkbox-radio-option-one" type="checkbox" value="">
-        Here's option one.
+        여기 옵션 하나.
     </label>
 
     <label for="checkbox-radio-option-two" class="pure-radio">
         <input id="checkbox-radio-option-two" type="radio" name="optionsRadios" value="option1" checked>
-        Here's a radio button. You can choose this one..
+        여기는 라디오 버튼. 선택할 수도 있고...
     </label>
 
     <label for="checkbox-radio-option-three" class="pure-radio">
         <input id="checkbox-radio-option-three" type="radio" name="optionsRadios" value="option2">
-        ..Or this one!
+        ...아니면 이거!
     </label>
 </form>
 
@@ -626,17 +628,17 @@
   <pre class="snippet" data-language="html"><code>&lt;form class=&quot;pure-form&quot;&gt;
     &lt;label for=&quot;option-one&quot; class=&quot;pure-checkbox&quot;&gt;
         &lt;input id=&quot;option-one&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;
-        Here&#x27;s option one.
+        여기 옵션 하나.
     &lt;/label&gt;
 
     &lt;label for=&quot;option-two&quot; class=&quot;pure-radio&quot;&gt;
         &lt;input id=&quot;option-two&quot; type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option1&quot; checked&gt;
-        Here&#x27;s a radio button. You can choose this one..
+        여기는 라디오 버튼. 선택할 수도 있고...
     &lt;/label&gt;
 
     &lt;label for=&quot;option-three&quot; class=&quot;pure-radio&quot;&gt;
         &lt;input id=&quot;option-three&quot; type=&quot;radio&quot; name=&quot;optionsRadios&quot; value=&quot;option2&quot;&gt;
-        ..Or this one!
+        ...아니면 이거!
     &lt;/label&gt;
 &lt;/form&gt;</code></pre>
 </div>
@@ -646,10 +648,10 @@
     <div class="pure-u-2-5">
         <div class="l-box">
             <p class="legal-license">
-                This site is built with &lt;3 using Pure v0.2.0
+                이 사이트는 Pure v0.2.0를 사용해서 &lt;3으로 만들어졌다.
             </p>
             <p class="legal-license">
-                All code on this site is licensed under the <a href="http://yuilibrary.com/license/">BSD License</a> unless stated otherwise.
+                이 사이트의 모든 코드는 다른 명시가 없다면 <a href="http://yuilibrary.com/license/">BSD License</a>를 따른다.
             </p>
         </div>
     </div>
