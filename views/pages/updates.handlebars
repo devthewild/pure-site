@@ -1,5 +1,5 @@
-{{setTitle     "Updates"}}
-{{setSubTitle  "The latest from the Pure project"}}
+{{setTitle     "업데이트"}}
+{{setSubTitle  "Pure project의 최신 소식"}}
 {{setActiveNav "updates"}}
 
 {{addLocalCSS "/css/updates.css"}}
@@ -8,65 +8,65 @@
 
 <div class="content">
     <div class="post pure-u-1">
-        <h2 class="content-subhead">Releasing Pure 0.2.0</h2>
+        <h2 class="content-subhead">Pure 0.2.0 출시</h2>
         <div class="post-meta">
-            June 11, 2013 | <a href="https://github.com/yui/pure/blob/master/HISTORY.md#020-2013-06-11">View Changelog</a>
+            2013/06/11 | <a href="https://github.com/yui/pure/blob/master/HISTORY.md#020-2013-06-11">변경사항 보기</a>
         </div>
         <p>
-            Two short weeks after initially launching Pure, we're excited to release <b>Pure 0.2.0</b>, the next version of Pure! You can start using it today by pasting this {{code "<link>"}} element into your {{code "<head>"}}, or pulling it from <a href="http://github.com/yui/pure/">GitHub</a>.
+            Pure를 처음 선보인지 겨우 2주만에 다음 버전 <b>Pure 0.2.0</b>를 배포하게 되어 기쁘다! 오늘 바로 <code>&lt;head&gt;</code> 안에 이 <code>&lt;link&gt;</code> 엘리먼트를 붙여넣거나 <a href="http://github.com/yui/pure/">GitHub</a>에서 가져와서 바로 사용할 수 있다.
         </p>
 
       {{#code}}
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
       {{/code}}
 
-        <h3>What's new?</h3>
+        <h3>새로운 점은?</h3>
 
         <p>
-            We fixed our {{code ":focus"}} issues, improving the accessibility that Pure gives your web project out of the box. We added {{code ":focus"}} rules to our existing {{code ":hover"}} rules, and removed {{code "outline"}} where applicable. The Pure website has also been updated to be more accessible to keyboard users and screen-readers.
+            <code>:focus</code> 문제를 해결했고, 이제 사용자들의 웹사이트에서 접근성이 개선됐다. 이미 있는 <code>:hover</code>에 <code>:focus</code>를 추가했고, <code>outline</code>을 제거했다. Pure 사이트는 키보드 유저나 스크린리더를 사용하는 사람들에게 더 접근성 좋게 업데이트되었다.
         </p>
         <p>
-            In addition, we applied improvements to most of the components within Pure based on people's feedback and by tackling low-hanging bugs and enhancements. A full list of the changes in this release can be found in Pure's <a href="#">{{code "HISTORY.md"}}</a>.
+            그리고 드물게 나타나는 버그, 기능 강화, 그리고 사람들의 피드백을 기반으로 Pure에 있는 컴포넌트 대부분을 개선했다. 이번 배포에서 전체 변경사항은 <a href="#"><code>HISTORY.md</code></a>에서 볼 수 있다.
         <p>
 
-        <p><a href="https://github.com/yui/pure/blob/master/HISTORY.md#020-2013-06-11" class="pure-button pure-button-primary">View 0.2.0 Changelog</a></p>
+        <p><a href="https://github.com/yui/pure/blob/master/HISTORY.md#020-2013-06-11" class="pure-button pure-button-primary">0.2.0 변경사항 보기</a></p>
 
-        <h3>Improved Developer Workflow</h3>
+        <h3>참여 단계 개선</h3>
 
         <p>
-            We also put a lot of work into improving the workflow for people working on Pure. The goal was to make it easier for people to contribute to the project (and the make our lives easier) by improving our tooling and integration with <a href="https://github.com/yui/pure-site">this website's code base</a>.
+            Pure를 작업중인 사람들을 위해 순서를 많이 개선하고 있다. <a href="https://github.com/yui/pure-site">이 사이트의 코드들</a>과 통합하고 작업하는걸 개선해서 사람들이 프로젝트에 더 쉽게 기여하는게(그리고 우리 삶을 더 편하게 하는게) 목표다.
         </p>
 
-        <h4>Testing and CI</h4>
+        <h4>테스트와 <abbr title="CI">지속적인 통합</abbr></h4>
         <p>
-            We wanted to add some basic tests to at least sanity check our code, and did this by integrating <a href="https://github.com/stubbornella/csslint">CSSLint</a> into our Gruntfile. The cool thing is that we hooked up <a href="https://travis-ci.org/yui/pure">Travis CI</a> so anytime someone issues a pull request it will be linted to make sure there's no typos or crazy code.
+            최소한 제대로 코드가 돌아가는지를 위해 기본적인 테스트들을 추가했고, Gruntfile을 통해 <a href="https://github.com/stubbornella/csslint">CSSLint</a>를 적용해서 테스트하고 있다. 멋진 <a href="https://travis-ci.org/yui/pure">Travis CI</a>에 연결해서, 언제든 누구든 요청을 보내서 오타나 삽질이 있는지 확인할 수 있다.
         </p>
 
-        <h4>Auto Building with Grunt</h4>
+        <h4>Grunt로 빌드 자동화</h4>
         <p>
-            To save your fingers from The Developer Konami Code: ⌘⇥ ↑ ⏎ use can now use the {{code "grunt watch"}} task to build Pure anytime a CSS file changes!
+            개발자의 코나미 코드 ⌘⇥ ↑ ⏎ 를 줄이려고 이제 <code>grunt watch</code>를 써서 CSS 파일이 바뀌면 바로 Pure를 빌드할 수 있다.
         </p>
 
-        <h4>Testing This Site with Pure Served Locally</h4>
+        <h4>로컬에서 이 사이트를 테스트</h4>
         <p>
-            This website dogfoods Pure making it a natural place to test the latest changes, especially during development. We added a feature to support <a href="https://github.com/yui/pure-site#running-with-pure-served-locally">running the website with Pure served locally</a>. When you combine this with auto building Pure via {{code "grunt watch"}} your day becomes bright, filled with sunshine!
+            이 사이트는 특히 개발중에 Pure를 직접 테스트해보기 좋은 곳이다. <a href="https://github.com/yui/pure-site#running-with-pure-served-locally">로컬에서 Pure 사이트 돌리기</a>라는 기능을 추가했다. <code>grunt watch</code>로 빌드 자동화로 좀 편하게 삽시다!
         </p>
 
-        <h4>Formalized Contributing Guidelines</h4>
+        <h4>기여를 위한 가이드라인</h4>
         <p>
-            We created a <a href="https://github.com/yui/pure/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> for Pure, which explains how you can contribute to the project. Give it a quick read before sending your pull requests!
+            프로젝트에 어떻게 기여할 수 있는지를 설명하려고 <a href="https://github.com/yui/pure/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a>를 만들었다. 요청을 보내기 전에 한번 읽어보길.
         </p>
 
-        <h3>Thanks to the Community</h3>
+        <h3>커뮤니티에 감사하며</h3>
 
         <p>
-            We've been overwhelmed by the feedback and the support that we've received since launching Pure. Although Pure is very young, it already has a vibrant community building up around it. Thanks to everyone who has been <a href="https://github.com/yui/pure/issues">opening issues</a> and <a href="https://github.com/yui/pure/pulls?direction=desc&amp;page=1&amp;sort=created&amp;state=closed">sending pull requests</a>. And a special shout-out to <a href="https://github.com/dannytatom">@dannytatom</a>, <a href="https://github.com/rcbdev">@rcbdev</a>, <a href="https://github.com/codepb">@codepb</a>, and <a href="https://github.com/mseri">@mseri</a> whose contributions were merged into the 0.2.0 release. Keep 'em coming!
+            Pure를 출시한 이래로 너무 많은 피드백과 지원을 받았다. Pure가 매우 어리긴 하지만, 이미 커뮤니티가 활발하게 돌아가고 있다. <a href="https://github.com/yui/pure/issues">이슈를 알려고</a> <a href="https://github.com/yui/pure/pulls?direction=desc&amp;page=1&amp;sort=created&amp;state=closed">요청을 보내준</a> 모든 사람들에게 감사한다. 특히 이번 0.2.0 배포에 기여해준 <a href="https://github.com/dannytatom">@dannytatom</a>, <a href="https://github.com/rcbdev">@rcbdev</a>, <a href="https://github.com/codepb">@codepb</a>, 그리고 <a href="https://github.com/mseri">@mseri</a>에게 고개숙여 감사한다. 계속되길!
         </p>
     </div>
 
     <aside>
         <p>
-            If you have questions regarding Pure, get in touch with <a href="http://twitter.com/ericf/" title="Eric on Twitter">@ericf</a> and <a href="http://twitter.com/tilomitra/" title="Tilo on Twitter">@tilomitra</a>.
+            Pure에 대한 질문이 있다면 <a href="http://twitter.com/ericf/" title="Eric on Twitter">@ericf</a>과 <a href="http://twitter.com/tilomitra/" title="Tilo on Twitter">@tilomitra</a>에게 연락해보길.
         </p>
     </aside>
 </div>

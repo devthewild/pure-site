@@ -47,23 +47,6 @@ function mkdir(p) {
 if( !fs.existsSync(dst) )
   mkdir(dst);
 
-// for debugging
-pages = { 
-  home: '/',
-  base: '/base/',
-  grids: '/grids/',
-  forms: '/forms/',
-  buttons: '/buttons/',
-  tables: '/tables/',
-  menus: '/menus/',
-  customize: '/customize/',
-  extend: '/extend/',
-  layouts: '/layouts/',
-  updates: '/updates/',
-  layoutsGallery: '/layouts/gallery/',
-  layoutsMarketing: '/layouts/marketing/',
-  layoutsEmail: '/layouts/email/' };
-
 var regexp = {};
 var file = {};
 for( var name in pages ) {
